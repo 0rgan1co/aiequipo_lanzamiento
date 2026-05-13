@@ -135,9 +135,15 @@ body{font-family:'Red Hat Display',sans-serif;background:var(--bg);color:var(--t
 .w-md{font-size:.9rem;color:#806600;}
 .w-sm{font-size:.78rem;color:var(--muted);}
 
+/* HERO VIDEO */
+.hero-video{padding:0 2rem 2.5rem;max-width:960px;margin:0 auto;}
+.hero-video-wrap{position:relative;padding-bottom:56.25%;height:0;border-radius:16px;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,.25);}
+.hero-video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border-radius:16px;}
+
 @media(max-width:768px){
   .hero-in,.resumen-grid,.desafios-grid,.hallazgos-grid,.vot-grid,.proximos-grid,.recursos-grid,.stat-grid{grid-template-columns:1fr;}
   .hero h1{font-size:2rem;}
   .nav{display:none;}
+  .hero-video{padding:0 1rem 2rem;}
 }
 </style>
