@@ -133,6 +133,18 @@ body{font-family:'Red Hat Display',sans-serif;background:var(--bg);color:var(--t
 .footer{background:var(--dark);border-top:1px solid rgba(0,200,255,.15);padding:1.5rem 2rem;text-align:center;font-size:.72rem;color:rgba(255,255,255,.5);font-family:'Inter',sans-serif;margin-top:2.5rem;}
 .footer strong{color:rgba(255,255,255,.8);}
 
+/* COSECHA */
+.cosecha-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem;}
+.cosecha-card{background:var(--white);border:1px solid var(--border-s);border-radius:var(--radius);padding:1.25rem;border-top:3px solid var(--cyan);}
+.cosecha-id{display:inline-block;background:var(--cyan);color:var(--dark);font-family:'Inter',sans-serif;font-size:.65rem;font-weight:700;padding:.15rem .45rem;border-radius:4px;margin-bottom:.5rem;}
+.cosecha-title{font-weight:700;font-size:.9rem;color:var(--dark);margin-bottom:.875rem;line-height:1.35;}
+.cosecha-body{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
+.cosecha-label{display:block;font-family:'Inter',sans-serif;font-size:.62rem;font-weight:700;color:var(--cyan);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:.4rem;}
+.cosecha-resumen ul{padding-left:1rem;font-size:.78rem;color:var(--text);line-height:1.6;}
+.cosecha-resumen li{margin-bottom:.25rem;}
+.cosecha-citas blockquote{font-size:.75rem;color:var(--muted);font-style:italic;border-left:2px solid var(--cyan);padding-left:.6rem;margin:0 0 .5rem 0;line-height:1.5;}
+@media(max-width:768px){.cosecha-grid{grid-template-columns:1fr;}.cosecha-body{grid-template-columns:1fr;}}
+
 /* WORD CLOUD */
 .word-cloud{display:flex;flex-wrap:wrap;gap:.5rem;padding:1.25rem;background:var(--white);border:1px solid var(--border-s);border-radius:var(--radius);justify-content:center;align-items:center;}
 .word{padding:.2rem .5rem;border-radius:var(--radius-pill);font-weight:600;font-family:'Inter',sans-serif;}
