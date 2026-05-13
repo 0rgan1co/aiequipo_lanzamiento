@@ -31,13 +31,13 @@
     </div>
     <div class="hero-right">
       <div class="hero-video-wrap">
-        <iframe
-          src="https://www.youtube.com/embed/WkY8cgjvE10"
-          title="Kick Off AI+Equipo"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
+        <video id="hero-video" src="/video.mp4" autoplay muted loop playsinline></video>
+        <button class="unmute-btn" id="unmute-btn" onclick="
+          var v = document.getElementById('hero-video');
+          var b = document.getElementById('unmute-btn');
+          if(v.muted){ v.muted=false; b.textContent='🔊'; }
+          else { v.muted=true; b.textContent='🔇'; }
+        ">🔇</button>
       </div>
     </div>
   </div>

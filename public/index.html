@@ -36,8 +36,10 @@ body{font-family:'Red Hat Display',sans-serif;background:var(--bg);color:var(--t
 .hero-in{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr auto;gap:3rem;align-items:start;}
 .hero-left{display:flex;flex-direction:column;gap:1.25rem;}
 .hero-right{display:flex;align-items:flex-start;justify-content:center;}
-.hero-video-wrap{width:260px;border-radius:16px;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,.35);aspect-ratio:9/16;background:#000;}
-.hero-video-wrap iframe{width:100%;height:100%;border:none;display:block;}
+.hero-video-wrap{width:260px;border-radius:16px;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,.35);aspect-ratio:9/16;background:#000;position:relative;}
+.hero-video-wrap video{width:100%;height:100%;object-fit:cover;display:block;border-radius:16px;}
+.unmute-btn{position:absolute;bottom:12px;right:12px;background:rgba(0,0,0,.55);border:none;border-radius:50%;width:36px;height:36px;font-size:1.1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;backdrop-filter:blur(4px);transition:.15s;}
+.unmute-btn:hover{background:rgba(0,0,0,.8);}
 .hero-eyebrow{font-family:'Inter',sans-serif;font-size:.68rem;font-weight:600;color:var(--cyan);letter-spacing:2.5px;text-transform:uppercase;}
 .hero h1{font-size:2.8rem;font-weight:700;line-height:1.1;letter-spacing:-1.5px;color:var(--white);}
 .hero h1 span{color:var(--cyan);}
@@ -211,13 +213,13 @@ body{font-family:'Red Hat Display',sans-serif;background:var(--bg);color:var(--t
     </div>
     <div class="hero-right">
       <div class="hero-video-wrap">
-        <iframe
-          src="https://www.youtube.com/embed/WkY8cgjvE10"
-          title="Kick Off AI+Equipo"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
+        <video id="hero-video" src="/video.mp4" autoplay muted loop playsinline></video>
+        <button class="unmute-btn" id="unmute-btn" onclick="
+          var v = document.getElementById('hero-video');
+          var b = document.getElementById('unmute-btn');
+          if(v.muted){ v.muted=false; b.textContent='🔊'; }
+          else { v.muted=true; b.textContent='🔇'; }
+        ">🔇</button>
       </div>
     </div>
   </div>
@@ -281,16 +283,10 @@ body{font-family:'Red Hat Display',sans-serif;background:var(--bg);color:var(--t
   <div class="sec-hdr"><span class="sec-num">02</span><h2 class="sec-title">Los 7 desafíos que identificamos</h2></div>
   <p style="font-size:.85rem;color:var(--muted);margin-bottom:1.5rem;">Cada desafío es un área de oportunidad para la adopción de IA en la Subsecretaría, identificados a través de <a href="https://nextstepslab.com/voces.ai/" target="_blank" style="color:var(--cyan);font-weight:600;text-decoration:none;">Voces.ai</a>. Los rankeaste según tu nivel de interés — el más votado está marcado.</p>
   <div class="desafios-grid">
-    <div class="desafio-card top">
-      <div class="top-badge">⭐ #1 más votado</div>
-      <div class="desafio-id">D6</div>
-      <div class="desafio-title">El Rol Irremplazable del Humano en la Era de la IA</div>
-      <div class="desafio-desc">¿Qué hace el humano que ninguna IA puede hacer? Creatividad, empatía, criterio contextual. El desafío es redefinir el rol: de ejecutar tareas a supervisar decisiones.</div>
-    </div>
     <div class="desafio-card">
-      <div class="desafio-id">D3</div>
-      <div class="desafio-title">El Pilar de la Confianza: Protocolos de IA y Datos Sensibles</div>
-      <div class="desafio-desc">La falta de un protocolo oficial sobre datos públicos genera parálisis. Sin certezas sobre privacidad, la adopción se queda en usos triviales y el equipo se auto-limita.</div>
+      <div class="desafio-id">D1</div>
+      <div class="desafio-title">De Alta Disponibilidad a Productividad Sostenible</div>
+      <div class="desafio-desc">La urgencia permanente y la disponibilidad constante generan agotamiento. La IA debe ser una herramienta de liberación, no una presión adicional de velocidad.</div>
     </div>
     <div class="desafio-card">
       <div class="desafio-id">D2</div>
@@ -298,29 +294,34 @@ body{font-family:'Red Hat Display',sans-serif;background:var(--bg);color:var(--t
       <div class="desafio-desc">Eliminar la fricción de las tareas de "bajo valor" — Excel repetitivo, reportes manuales — para que el equipo recupere su capacidad de análisis y creatividad.</div>
     </div>
     <div class="desafio-card">
-      <div class="desafio-id">D1</div>
-      <div class="desafio-title">De Alta Disponibilidad a Productividad Sostenible</div>
-      <div class="desafio-desc">La urgencia permanente y la disponibilidad constante generan agotamiento. La IA debe ser una herramienta de liberación, no una presión adicional de velocidad.</div>
-    </div>
-    <div class="desafio-card">
-      <div class="desafio-id">D5</div>
-      <div class="desafio-title">Alfabetización IA y Soberanía Cognitiva</div>
-      <div class="desafio-desc">La demanda de formación es explícita. El equipo quiere pasar del prompting básico al pensamiento estratégico — sin perder soberanía sobre sus propios procesos.</div>
-    </div>
-    <div class="desafio-card">
-      <div class="desafio-id">D7</div>
-      <div class="desafio-title">Resultados Tangibles: Demostración Rápida de Valor a la Ciudadanía</div>
-      <div class="desafio-desc">La IA ya está impactando la comunicación vecinal. Hay victorias tempranas para mostrar — mensajes más claros, campañas más eficientes — que validan la estrategia con hechos.</div>
+      <div class="desafio-id">D3</div>
+      <div class="desafio-title">El Pilar de la Confianza: Protocolos de IA y Datos Sensibles</div>
+      <div class="desafio-desc">La falta de un protocolo oficial sobre datos públicos genera parálisis. Sin certezas sobre privacidad, la adopción se queda en usos triviales y el equipo se auto-limita.</div>
     </div>
     <div class="desafio-card">
       <div class="desafio-id">D4</div>
       <div class="desafio-title">De Caso Aislado a Estándar Operativo</div>
       <div class="desafio-desc">Existen "campeones" dentro del equipo que ya ahorraron semanas de trabajo con IA. El desafío es identificarlos y replicar sus flujos para generar efecto contagio.</div>
     </div>
+    <div class="desafio-card">
+      <div class="desafio-id">D5</div>
+      <div class="desafio-title">Alfabetización IA y Soberanía Cognitiva</div>
+      <div class="desafio-desc">La demanda de formación es explícita. El equipo quiere pasar del prompting básico al pensamiento estratégico — sin perder soberanía sobre sus propios procesos.</div>
+    </div>
+    <div class="desafio-card top">
+      <div class="top-badge">⭐ #1 más votado</div>
+      <div class="desafio-id">D6</div>
+      <div class="desafio-title">El Rol Irremplazable del Humano en la Era de la IA</div>
+      <div class="desafio-desc">¿Qué hace el humano que ninguna IA puede hacer? Creatividad, empatía, criterio contextual. El desafío es redefinir el rol: de ejecutar tareas a supervisar decisiones.</div>
+    </div>
+    <div class="desafio-card">
+      <div class="desafio-id">D7</div>
+      <div class="desafio-title">Resultados Tangibles: Demostración Rápida de Valor a la Ciudadanía</div>
+      <div class="desafio-desc">La IA ya está impactando la comunicación vecinal. Hay victorias tempranas para mostrar — mensajes más claros, campañas más eficientes — que validan la estrategia con hechos.</div>
+    </div>
   </div>
 </div>
 <hr class="sep">
-
 
 <div class="sec" id="votaciones">
   <div class="sec-hdr"><span class="sec-num">03</span><h2 class="sec-title">Lo que votamos en el Lanzamiento</h2></div>
