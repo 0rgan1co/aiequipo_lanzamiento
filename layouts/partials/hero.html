@@ -3,7 +3,8 @@
     <div class="hero-left">
       <div class="hero-eyebrow">GCBA · Subsecretaría de Comunicación Digital</div>
       <h1>Lo que construimos<br>juntos en el <span>Kick Off</span></h1>
-      <p class="hero-desc">Este documento es tu ayuda memoria del primer encuentro del programa AI+Equipo. Acá encontrás los desafíos que identificamos, los hallazgos del research y lo que votamos juntos.</p>
+      <p class="hero-desc">Este documento es tu ayuda memoria del primer encuentro del programa AI+Equipo. Acá encontrás
+        los desafíos que identificamos, los hallazgos del research y lo que votamos juntos.</p>
       <div class="hero-meta">
         <span class="pill pill-c">75 participantes</span>
         <span class="pill pill-c">7 desafíos explorados</span>
@@ -31,28 +32,64 @@
     </div>
     <div class="hero-right">
       <div class="hero-video-wrap">
-        <iframe
-          id="yt-player"
-          src="https://www.youtube.com/embed/WkY8cgjvE10?autoplay=1&mute=1&loop=1&playlist=WkY8cgjvE10&controls=0&playsinline=1"
-          title="Kick Off AI+Equipo"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
-        <button class="unmute-btn" id="unmute-btn" onclick="
-          var iframe = document.getElementById('yt-player');
-          var b = document.getElementById('unmute-btn');
-          if(b.dataset.muted !== 'false'){
-            iframe.src = iframe.src.replace('mute=1','mute=0');
-            b.textContent = '🔊';
-            b.dataset.muted = 'false';
-          } else {
-            iframe.src = iframe.src.replace('mute=0','mute=1');
-            b.textContent = '🔇';
-            b.dataset.muted = 'true';
-          }
-        ">🔇</button>
+        <video id="hero-video" autoplay muted loop playsinline preload="none"
+          poster='{{ "img/bienvenida.avif" | relURL }}' aria-label="Video del Kick Off AI+Equipo">
+          <source data-src='{{ "video/kickoff.webm" | relURL }}' type="video/webm">
+          <source data-src='{{ "video/kickoff.mp4" | relURL }}' type="video/mp4">
+        </video>
+        <button class="unmute-btn" id="unmute-btn" type="button" data-muted="true">🔇</button>
       </div>
     </div>
   </div>
+  <script>
+    (function () {
+      var video = document.getElementById('hero-video');
+      var button = document.getElementById('unmute-btn');
+      if (!video) return;
+
+      var isLoaded = false;
+      function ensureVideoLoaded() {
+        if (isLoaded) return;
+        var sources = video.querySelectorAll('source[data-src]');
+        for (var i = 0; i < sources.length; i += 1) {
+          var src = sources[i].getAttribute('data-src');
+          if (src) {
+            sources[i].setAttribute('src', src);
+            sources[i].removeAttribute('data-src');
+          }
+        }
+        video.load();
+        var autoplayAttempt = video.play();
+        if (autoplayAttempt && typeof autoplayAttempt.catch === 'function') {
+          autoplayAttempt.catch(function () { });
+        }
+        isLoaded = true;
+      }
+
+      if ('IntersectionObserver' in window) {
+        var observer = new IntersectionObserver(function (entries) {
+          if (entries[0] && entries[0].isIntersecting) {
+            ensureVideoLoaded();
+            observer.disconnect();
+          }
+        }, { rootMargin: '200px 0px' });
+        observer.observe(video);
+      } else {
+        ensureVideoLoaded();
+      }
+
+      if (!button) return;
+      button.addEventListener('click', function () {
+        ensureVideoLoaded();
+        var isMuted = button.dataset.muted !== 'false';
+        video.muted = !isMuted;
+        button.textContent = isMuted ? '🔊' : '🔇';
+        button.dataset.muted = isMuted ? 'false' : 'true';
+        var playAttempt = video.play();
+        if (playAttempt && typeof playAttempt.catch === 'function') {
+          playAttempt.catch(function () { });
+        }
+      });
+    })();
+  </script>
 </section>
