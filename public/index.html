@@ -204,8 +204,9 @@ img { max-width:100%; }
   overflow:hidden;
   box-shadow:var(--shadow-lg);
   background:#000; position:relative;
-  border:1px solid var(--border);
+  border:1px solid rgba(255,255,255,.1);
 }
+.hero-video-wrap iframe { width:100%; height:100%; border:none; display:block; }
 .hero-video-wrap video { width:100%; height:100%; object-fit:cover; display:block; }
 .unmute-btn {
   position:absolute; bottom:12px; right:12px;
@@ -583,13 +584,13 @@ img { max-width:100%; }
     </div>
     <div class="hero-right">
       <div class="hero-video-wrap">
-        <video id="hero-video" src="/video.mp4" autoplay muted loop playsinline></video>
-        <button class="unmute-btn" id="unmute-btn" onclick="
-          var v = document.getElementById('hero-video');
-          var b = document.getElementById('unmute-btn');
-          if(v.muted){ v.muted=false; b.textContent='🔊'; }
-          else { v.muted=true; b.textContent='🔇'; }
-        ">🔇</button>
+        <iframe
+          src="https://www.youtube.com/embed/WkY8cgjvE10"
+          title="Kick Off AI+Equipo"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
       </div>
     </div>
   </div>
