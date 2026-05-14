@@ -3,7 +3,8 @@
 > Ayuda memoria del Kick Off del programa AI+Equipo  
 > GCBA · Subsecretaría de Comunicación Digital · Mayo 2026
 
-🌐 **Landing:** [ai-equipo-kickoff.surge.sh](https://ai-equipo-kickoff.surge.sh)
+🌐 **Landing (principal):** [ai-equipo-kickoff.surge.sh](https://ai-equipo-kickoff.surge.sh)  
+🔁 **Landing (backup):** [0rgan1co.github.io/aiequipo_lanzamiento](https://0rgan1co.github.io/aiequipo_lanzamiento/)
 
 ---
 
@@ -147,7 +148,8 @@ hugo server
 
 | Recurso | URL |
 |---------|-----|
-| Landing | https://ai-equipo-kickoff.surge.sh |
+| Landing (principal) | https://ai-equipo-kickoff.surge.sh |
+| Landing (backup) | https://0rgan1co.github.io/aiequipo_lanzamiento/ |
 | Repo | https://github.com/0rgan1co/aiequipo_lanzamiento |
 | Research Voces AI | https://drive.google.com/file/d/1CfOL28b0o6jbMCnKo-5CFuKnqtIQI7SV/view |
 | Slides del Kick Off | https://drive.google.com/file/d/1YN7fdqE6QVUDFSYmq8JHMEN5gLhZaaxB/view?usp=sharing |
