@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI+Equipo — Kick Off</title>
+<meta http-equiv="refresh" content="30">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family:'DM Sans',system-ui,sans-serif;
+    background:linear-gradient(135deg,#070708 0%,#0A1628 55%,#0B1A2E 100%);
+    min-height:100vh;
+    display:flex; align-items:center; justify-content:center;
+    color:#fff;
+  }
+  .card {
+    text-align:center;
+    padding:3rem 2.5rem;
+    max-width:480px;
+    width:90%;
+  }
+  .badge {
+    display:inline-block;
+    background:#00AEFE;
+    color:#070708;
+    font-size:.65rem;
+    font-weight:700;
+    padding:.25rem .75rem;
+    border-radius:9999px;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+    margin-bottom:1.5rem;
+  }
+  h1 {
+    font-size:1.75rem;
+    font-weight:700;
+    letter-spacing:-.5px;
+    margin-bottom:.875rem;
+    line-height:1.2;
+  }
+  h1 span { color:#00AEFE; }
+  p {
+    color:rgba(255,255,255,.55);
+    font-size:.9rem;
+    line-height:1.75;
+    margin-bottom:2rem;
+  }
+  .spinner {
+    width:36px; height:36px;
+    border:3px solid rgba(0,174,254,.2);
+    border-top-color:#00AEFE;
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+    margin:0 auto 1.25rem;
+  }
+  @keyframes spin { to { transform:rotate(360deg); } }
+  .note {
+    font-size:.72rem;
+    color:rgba(255,255,255,.3);
+    font-family:'Inter',system-ui,sans-serif;
+    letter-spacing:.3px;
+  }
+  .retry { display:inline-block; margin-top:1.5rem; background:transparent; border:1px solid rgba(0,174,254,.4); color:#00AEFE; font-size:.8rem; font-weight:600; padding:.6rem 1.5rem; border-radius:9999px; cursor:pointer; text-decoration:none; transition:.15s; }
+  .retry:hover { background:rgba(0,174,254,.1); }
+  .btn-gh { display:inline-block; margin-top:.75rem; background:#CABDEC; color:#1a1040; font-size:.8rem; font-weight:700; padding:.6rem 1.5rem; border-radius:9999px; cursor:pointer; text-decoration:none; transition:.15s; border:none; }
+  .btn-gh:hover { background:#b8a8e0; }
+  .lavender {
+    width:200px; height:200px;
+    background:radial-gradient(circle,rgba(202,189,236,.12) 0%,transparent 70%);
+    position:fixed; bottom:-60px; left:-60px;
+    pointer-events:none;
+  }
+  .cyan-glow {
+    width:300px; height:300px;
+    background:radial-gradient(circle,rgba(0,174,254,.08) 0%,transparent 70%);
+    position:fixed; top:-80px; right:-80px;
+    pointer-events:none;
+  }
+</style>
+</head>
+<body>
+  <div class="cyan-glow"></div>
+  <div class="lavender"></div>
+  <div class="card">
+    <div class="badge">AI+Equipo · GCBA</div>
+    <div class="spinner"></div>
+    <h1>Volvemos en <span>un momento</span></h1>
+    <p>Estamos experimentando una demora temporal. La ayuda memoria del Kick Off va a estar disponible en breve.<br>La página se actualiza sola cada 30 segundos.</p>
+    <a class="retry" href="https://ai-equipo-kickoff.surge.sh">Intentar de nuevo →</a>
+    <br>
+    <a class="btn-gh" href="https://0rgan1co.github.io/aiequipo_lanzamiento/" target="_blank">Ver versión alternativa →</a>
+    <p class="note" style="margin-top:1.5rem;">Si el problema persiste, escribinos al grupo.</p>
+  </div>
+</body>
+</html>
