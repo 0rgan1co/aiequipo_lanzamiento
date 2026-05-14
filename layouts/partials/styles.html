@@ -1,5 +1,5 @@
 <link
-  href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Inter:wght@400;500;600;700&display=swap"
+  href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@500;600;700&display=swap"
   rel="stylesheet">
 <style>
   /* ============================================================
@@ -411,6 +411,10 @@
     border: none;
     border-top: 1px solid var(--border);
     margin: 3.5rem 0;
+  }
+
+  .sep-compact {
+    margin: 2rem 0 1.25rem;
   }
 
   /* ============================================================
@@ -868,6 +872,35 @@
     font-weight: 600;
   }
 
+  .wordcloud-block {
+    margin-bottom: 2rem;
+  }
+
+  .wordcloud-label {
+    font-family: 'Inter', sans-serif;
+    font-size: .68rem;
+    font-weight: 600;
+    color: var(--dark);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+  }
+
+  .wordcloud-frame {
+    display: block;
+    aspect-ratio: 3.2 / 1;
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  .wordcloud-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+
   /* ============================================================
    RECURSOS
    ============================================================ */
@@ -1160,6 +1193,10 @@
 
     .hero {
       padding: 3rem 1.25rem;
+    }
+
+    .wordcloud-frame {
+      aspect-ratio: 2.35 / 1;
     }
   }
 
