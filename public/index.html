@@ -585,12 +585,26 @@ img { max-width:100%; }
     <div class="hero-right">
       <div class="hero-video-wrap">
         <iframe
-          src="https://www.youtube.com/embed/WkY8cgjvE10"
+          id="yt-player"
+          src="https://www.youtube.com/embed/WkY8cgjvE10?autoplay=1&mute=1&loop=1&playlist=WkY8cgjvE10&controls=0&playsinline=1"
           title="Kick Off AI+Equipo"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen>
         </iframe>
+        <button class="unmute-btn" id="unmute-btn" onclick="
+          var iframe = document.getElementById('yt-player');
+          var b = document.getElementById('unmute-btn');
+          if(b.dataset.muted !== 'false'){
+            iframe.src = iframe.src.replace('mute=1','mute=0');
+            b.textContent = '🔊';
+            b.dataset.muted = 'false';
+          } else {
+            iframe.src = iframe.src.replace('mute=0','mute=1');
+            b.textContent = '🔇';
+            b.dataset.muted = 'true';
+          }
+        ">🔇</button>
       </div>
     </div>
   </div>
