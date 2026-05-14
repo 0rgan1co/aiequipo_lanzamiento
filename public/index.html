@@ -1,598 +1,1231 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-	<meta name="generator" content="Hugo 0.161.1">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI+Equipo — Kick Off · SSCDI GCBA</title>
-<meta name="description" content="Ayuda memoria del Kick Off AI+Equipo. Desafíos, hallazgos del research, votaciones y cosecha de los grupos de trabajo. GCBA · Subsecretaría de Comunicación Digital · Mayo 2026.">
+  <meta name="generator" content="Hugo 0.161.1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI+Equipo — Kick Off · SSCDI GCBA</title>
+  <meta name="description"
+    content="Ayuda memoria del Kick Off AI+Equipo. Desafíos, hallazgos del research, votaciones y cosecha de los grupos de trabajo. GCBA · Subsecretaría de Comunicación Digital · Mayo 2026.">
 
-<meta property="og:title" content="AI+Equipo — Kick Off · GCBA">
-<meta property="og:description" content="75 personas. 7 desafíos. Un punto de partida compartido. Todo lo que construimos juntos en el Kick Off del programa AI+Equipo.">
-<meta property="og:image" content="https://ai-equipo-kickoff.surge.sh/img/og.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:url" content="https://ai-equipo-kickoff.surge.sh/">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="es_AR">
+  <meta property="og:title" content="AI+Equipo — Kick Off · GCBA">
+  <meta property="og:description"
+    content="75 personas. 7 desafíos. Un punto de partida compartido. Todo lo que construimos juntos en el Kick Off del programa AI+Equipo.">
+  <meta property="og:image" content="https://ai-equipo-kickoff.surge.sh/img/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://ai-equipo-kickoff.surge.sh/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="AI+Equipo — Kick Off · GCBA">
-<meta name="twitter:description" content="75 personas. 7 desafíos. Un punto de partida compartido. Todo lo que construimos juntos en el Kick Off del programa AI+Equipo.">
-<meta name="twitter:image" content="https://ai-equipo-kickoff.surge.sh/img/og.jpg">
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
- 
-:root {
-  --cyan:         #00AEFE;
-  --cyan-deep:    #0076B8;
-  --cyan-light:   #D4F8FE;
-  --cyan-bg:      #EBF7FF;
-  --cyan-border:  #B3DEFF;
-  --lavender:     #CABDEC;
-  --lav-bg:       #F3F0FB;
-  --lav-border:   #D9D0F5;
-  --yellow:       #CABDEC;
-  --yellow-bg:    #F3F0FB;
-  --yellow-border:#D9D0F5;
-  --yellow-text:  #6B5FA8;
-  --green:        #1B6E3A;
-  --green-bg:     #EDFBF3;
-  --green-border: #A8DFBF;
-  --red-bg:       #FFF0F0;
-  --red-border:   #FFBBBB;
-  --red-text:     #8B1A1A;
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI+Equipo — Kick Off · GCBA">
+  <meta name="twitter:description"
+    content="75 personas. 7 desafíos. Un punto de partida compartido. Todo lo que construimos juntos en el Kick Off del programa AI+Equipo.">
+  <meta name="twitter:image" content="https://ai-equipo-kickoff.surge.sh/img/og.jpg">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --cyan: #00AEFE;
+      --cyan-deep: #0076B8;
+      --cyan-light: #D4F8FE;
+      --cyan-bg: #EBF7FF;
+      --cyan-border: #B3DEFF;
+      --lavender: #CABDEC;
+      --lav-bg: #F3F0FB;
+      --lav-border: #D9D0F5;
+      --yellow: #CABDEC;
+      --yellow-bg: #F3F0FB;
+      --yellow-border: #D9D0F5;
+      --yellow-text: #6B5FA8;
+      --green: #1B6E3A;
+      --green-bg: #EDFBF3;
+      --green-border: #A8DFBF;
+      --red-bg: #FFF0F0;
+      --red-border: #FFBBBB;
+      --red-text: #8B1A1A;
 
-   
-  --ink-900: #111318;
-  --ink-700: #2C3038;
-  --ink-500: #565C68;
-  --ink-300: #9EA5B0;
-  --ink-100: #E4E7EC;
-  --ink-50:  #F7F8FA;
-  --white:   #FFFFFF;
 
-   
-  --text:      var(--ink-700);
-  --text-sub:  var(--ink-500);
-  --muted:     var(--ink-300);
-  --bg:        #F0F2F5;
-  --bg-card:   var(--white);
-  --border:    var(--ink-100);
+      --ink-900: #111318;
+      --ink-700: #2C3038;
+      --ink-500: #565C68;
+      --ink-300: #9EA5B0;
+      --ink-100: #E4E7EC;
+      --ink-50: #F7F8FA;
+      --white: #FFFFFF;
 
-   
-  --radius-sm:  6px;
-  --radius:     12px;
-  --radius-lg:  18px;
-  --radius-xl:  24px;
-  --radius-pill:9999px;
 
-   
-  --shadow-xs: 0 1px 2px rgba(0,0,0,.05);
-  --shadow-sm: 0 1px 4px rgba(0,0,0,.06), 0 2px 8px rgba(0,0,0,.04);
-  --shadow-md: 0 4px 16px rgba(0,0,0,.08), 0 1px 4px rgba(0,0,0,.04);
-  --shadow-lg: 0 8px 32px rgba(0,0,0,.1),  0 2px 8px rgba(0,0,0,.05);
-}
+      --text: var(--ink-700);
+      --text-sub: var(--ink-500);
+      --muted: var(--ink-300);
+      --bg: #F0F2F5;
+      --bg-card: var(--white);
+      --border: var(--ink-100);
 
- 
-*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
-html { scroll-behavior:smooth; }
-body {
-  font-family:'DM Sans',sans-serif;
-  background:var(--bg);
-  color:var(--text);
-  line-height:1.65;
-  font-size:15px;
-  -webkit-font-smoothing:antialiased;
-}
-a { color:var(--cyan-deep); text-decoration:none; }
-a:hover { text-decoration:underline; }
-strong { font-weight:600; }
-img { max-width:100%; }
 
- 
-.hdr {
-  background:var(--white);
-  position:sticky; top:0; z-index:100;
-  border-bottom:1px solid var(--border);
-  box-shadow:var(--shadow-xs);
-}
-.hdr-in {
-  max-width:1140px; margin:0 auto;
-  padding:.75rem 2rem;
-  display:flex; align-items:center; justify-content:space-between;
-}
-.logo { display:flex; align-items:center; gap:.875rem; }
-.logo-img { height:28px; width:auto; display:block; }
-.logo-sub-wrap { border-left:1px solid var(--border); padding-left:.875rem; }
-.logo-sub { color:var(--muted); font-size:.62rem; font-family:'Inter',sans-serif; }
-.nav { display:flex; gap:.125rem; }
-.nav a {
-  color:var(--text-sub);
-  font-family:'Inter',sans-serif;
-  font-size:.67rem; font-weight:500;
-  padding:.3rem .65rem;
-  border-radius:var(--radius-pill);
-  transition:all .15s;
-  text-transform:uppercase; letter-spacing:.5px;
-}
-.nav a:hover { background:var(--cyan-bg); color:var(--cyan-deep); text-decoration:none; }
+      --radius-sm: 6px;
+      --radius: 12px;
+      --radius-lg: 18px;
+      --radius-xl: 24px;
+      --radius-pill: 9999px;
 
- 
-.hero {
-  background:linear-gradient(135deg, #070708 0%, #0A1628 55%, #0B1A2E 100%);
-  border-bottom:1px solid rgba(0,174,254,.12);
-  padding:4.5rem 2rem 4rem;
-  position:relative; overflow:hidden;
-}
-.hero::before {
-  content:'';
-  position:absolute; top:-120px; right:-80px;
-  width:520px; height:520px;
-  background:radial-gradient(circle, rgba(0,174,254,.12) 0%, transparent 65%);
-  pointer-events:none;
-}
-.hero::after {
-  content:'';
-  position:absolute; bottom:-100px; left:-60px;
-  width:380px; height:380px;
-  background:radial-gradient(circle, rgba(202,189,236,.08) 0%, transparent 65%);
-  pointer-events:none;
-}
-.hero-in {
-  max-width:1140px; margin:0 auto;
-  display:grid; grid-template-columns:1fr 260px;
-  gap:4rem; align-items:start;
-  position:relative; z-index:1;
-}
-.hero-left { display:flex; flex-direction:column; gap:1.5rem; }
-.hero-right { display:flex; align-items:flex-start; justify-content:center; }
 
-.hero-eyebrow {
-  font-family:'Inter',sans-serif;
-  font-size:.62rem; font-weight:700;
-  color:var(--cyan);
-  letter-spacing:2.5px; text-transform:uppercase;
-}
-.hero h1 {
-  font-size:2.8rem; font-weight:700;
-  line-height:1.08; letter-spacing:-1.5px;
-  color:#ffffff;
-}
-.hero h1 span { color:var(--cyan); }
-.hero-desc {
-  color:rgba(255,255,255,.6);
-  font-size:.93rem; line-height:1.8; max-width:500px;
-}
-.hero-meta { display:flex; flex-wrap:wrap; gap:.375rem; }
-.pill {
-  display:inline-flex; align-items:center;
-  padding:.22rem .7rem;
-  border-radius:var(--radius-pill);
-  font-size:.67rem; font-weight:600;
-  font-family:'Inter',sans-serif;
-  border:1px solid; letter-spacing:.2px;
-}
-.pill-c { background:rgba(0,174,254,.15); color:var(--cyan); border-color:rgba(0,174,254,.3); }
-.pill-y { background:rgba(202,189,236,.15); color:#6B5FA8; border-color:rgba(202,189,236,.4); }
-.pill-w { background:rgba(255,255,255,.07); color:rgba(255,255,255,.7); border-color:rgba(255,255,255,.13); }
+      --shadow-xs: 0 1px 2px rgba(0, 0, 0, .05);
+      --shadow-sm: 0 1px 4px rgba(0, 0, 0, .06), 0 2px 8px rgba(0, 0, 0, .04);
+      --shadow-md: 0 4px 16px rgba(0, 0, 0, .08), 0 1px 4px rgba(0, 0, 0, .04);
+      --shadow-lg: 0 8px 32px rgba(0, 0, 0, .1), 0 2px 8px rgba(0, 0, 0, .05);
+    }
 
- 
-.stat-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:.625rem; }
-.stat-card {
-  background:rgba(255,255,255,.05);
-  border:1px solid rgba(255,255,255,.09);
-  border-radius:var(--radius);
-  padding:.875rem 1rem; text-align:center;
-  backdrop-filter:blur(4px);
-}
-.stat-card:hover { border-color:rgba(0,174,254,.3); }
-.stat-n {
-  font-size:1.85rem; font-weight:700;
-  color:var(--cyan); line-height:1;
-  margin-bottom:.2rem; letter-spacing:-1px;
-}
-.stat-l {
-  font-size:.67rem; color:rgba(255,255,255,.45);
-  font-family:'Inter',sans-serif; line-height:1.4;
-}
 
- 
-.hero-video-wrap {
-  width:100%; aspect-ratio:9/16;
-  border-radius:var(--radius-lg);
-  overflow:hidden;
-  box-shadow:var(--shadow-lg);
-  background:#000; position:relative;
-  border:1px solid rgba(255,255,255,.1);
-}
-.hero-video-wrap iframe { width:100%; height:100%; border:none; display:block; }
-.hero-video-wrap video { width:100%; height:100%; object-fit:cover; display:block; }
-.unmute-btn {
-  position:absolute; bottom:12px; right:12px;
-  background:rgba(0,0,0,.5);
-  border:none; border-radius:50%;
-  width:34px; height:34px; font-size:.9rem;
-  cursor:pointer;
-  display:flex; align-items:center; justify-content:center;
-  backdrop-filter:blur(6px);
-  transition:.15s; color:white;
-}
-.unmute-btn:hover { background:rgba(0,118,184,.85); }
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
- 
-.main { max-width:1140px; margin:0 auto; padding:3rem 2rem; }
-.sec { margin-bottom:4rem; }
-.sec-hdr {
-  display:flex; align-items:baseline; gap:.875rem;
-  margin-bottom:2rem; padding-bottom:.75rem;
-  border-bottom:2px solid var(--border);
-}
-.sec-num {
-  font-family:'Inter',sans-serif; font-size:.6rem;
-  color:var(--cyan-deep); letter-spacing:2px;
-  font-weight:700; text-transform:uppercase;
-}
-.sec-title { font-size:1.4rem; font-weight:700; letter-spacing:-.4px; color:var(--ink-900); }
-.sep { border:none; border-top:1px solid var(--border); margin:3.5rem 0; }
+    html {
+      scroll-behavior: smooth;
+    }
 
- 
-.tldr-banner {
-  background:var(--cyan-bg);
-  border:1px solid var(--cyan-border);
-  border-left:4px solid var(--cyan);
-  border-radius:var(--radius-lg);
-  padding:1.75rem 2rem;
-  margin-bottom:3rem;
-}
-.tldr-tag {
-  display:inline-flex; align-items:center;
-  background:var(--cyan-deep); color:#fff;
-  font-family:'Inter',sans-serif; font-weight:700;
-  font-size:.6rem; padding:.2rem .6rem;
-  border-radius:var(--radius-pill); letter-spacing:1px;
-  text-transform:uppercase; margin-bottom:.875rem;
-}
-.tldr-title { font-weight:700; font-size:1rem; color:var(--ink-900); margin-bottom:1.125rem; }
-.tldr-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:.875rem; }
-.tldr-card {
-  background:var(--white);
-  border:1px solid var(--cyan-border);
-  border-radius:var(--radius);
-  padding:1rem 1.125rem;
-  box-shadow:var(--shadow-xs);
-}
-.tldr-card-icon { font-size:1.25rem; margin-bottom:.375rem; }
-.tldr-card-title { font-weight:700; font-size:.82rem; color:var(--ink-900); margin-bottom:.3rem; }
-.tldr-card-desc { font-size:.76rem; color:var(--text-sub); line-height:1.65; }
-.tldr-quote {
-  margin-top:1rem; padding:.875rem 1.125rem;
-  background:var(--white); border:1px solid var(--cyan-border);
-  border-radius:var(--radius);
-  font-size:.82rem; color:var(--text); line-height:1.65;
-}
-.tldr-quote strong { color:var(--cyan-deep); }
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      font-size: 15px;
+      -webkit-font-smoothing: antialiased;
+    }
 
- 
-.resumen-selfie {
-  margin-bottom:1.75rem;
-  border-radius:var(--radius-xl);
-  overflow:hidden;
-  position:relative;
-  border:1px solid var(--border);
-  box-shadow:var(--shadow-sm);
-}
-.selfie-img { width:100%; display:block; }
-.selfie-caption {
-  position:absolute; bottom:0; left:0; right:0;
-  background:linear-gradient(to top, rgba(0,0,0,.6) 0%, transparent 100%);
-  color:rgba(255,255,255,.85);
-  font-size:.72rem; font-family:'Inter',sans-serif;
-  padding:2rem 1.5rem .875rem; letter-spacing:.2px;
-}
-.resumen-grid { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
-.res-card {
-  background:var(--bg-card);
-  border:1px solid var(--border);
-  border-radius:var(--radius);
-  padding:1.375rem;
-  box-shadow:var(--shadow-xs);
-  transition:all .2s;
-}
-.res-card:hover { box-shadow:var(--shadow-md); border-color:var(--cyan-border); transform:translateY(-1px); }
-.res-card-icon { font-size:1.5rem; margin-bottom:.6rem; display:block; }
-.res-card-title { font-weight:700; font-size:.9rem; margin-bottom:.375rem; color:var(--ink-900); }
-.res-card-desc { font-size:.79rem; color:var(--text-sub); line-height:1.7; }
+    a {
+      color: var(--cyan-deep);
+      text-decoration: none;
+    }
 
- 
-.desafios-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; }
-.desafio-card {
-  background:var(--bg-card);
-  border:1px solid var(--border);
-  border-radius:var(--radius);
-  padding:1.25rem;
-  box-shadow:var(--shadow-xs);
-  transition:all .2s;
-  position:relative;
-}
-.desafio-card:hover { box-shadow:var(--shadow-md); border-color:var(--cyan-border); transform:translateY(-2px); }
-.desafio-id {
-  display:inline-block; font-family:'Inter',sans-serif;
-  font-size:.6rem; font-weight:700;
-  color:var(--white); background:var(--cyan-deep);
-  padding:.14rem .45rem; border-radius:var(--radius-sm);
-  letter-spacing:.5px; margin-bottom:.5rem; text-transform:uppercase;
-}
-.desafio-title { font-weight:700; font-size:.88rem; line-height:1.4; margin-bottom:.5rem; color:var(--ink-900); }
-.desafio-desc { font-size:.76rem; color:var(--text-sub); line-height:1.65; }
-.desafio-card.top {
-  border-top:3px solid var(--yellow);
-  background:linear-gradient(135deg, #00ECFE 0%, #00AEFE 35%, #CABDEC 70%, #d4f8fe 100%);
-  position:relative;
-  overflow:hidden;
-}
-.desafio-card.top::before {
-  content:'';
-  position:absolute;
-  top:-40px; left:-30px;
-  width:180px; height:180px;
-  background:radial-gradient(circle, rgba(255,255,255,.6) 0%, transparent 70%);
-  pointer-events:none;
-}
-.desafio-card.top::after {
-  content:'';
-  position:absolute;
-  bottom:-30px; right:-20px;
-  width:140px; height:140px;
-  background:radial-gradient(circle, rgba(0,174,254,.4) 0%, transparent 70%);
-  pointer-events:none;
-}
-.desafio-card.top .desafio-id { background:rgba(0,0,0,.25); color:#fff; }
-.desafio-card.top .desafio-title { color:#0A1628; }
-.desafio-card.top .desafio-desc { color:rgba(10,22,40,.75); }
-.desafio-card.top .top-badge {
-  background:rgba(255,255,255,.35);
-  color:#0A1628;
-  border-color:rgba(255,255,255,.5);
-}
+    a:hover {
+      text-decoration: underline;
+    }
 
-.top-badge {
-  display:inline-block;
-  background:rgba(255,255,255,.35); color:#0A1628;
-  border:1px solid rgba(255,255,255,.5);
-  font-size:.58rem; font-weight:700;
-  padding:.1rem .45rem; border-radius:var(--radius-pill);
-  font-family:'Inter',sans-serif; text-transform:uppercase;
-  letter-spacing:.5px; margin-bottom:.5rem;
-}
-.cosecha-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:1rem; }
-.cosecha-card {
-  background:var(--bg-card);
-  border:1px solid var(--border);
-  border-top:3px solid var(--cyan);
-  border-radius:var(--radius);
-  padding:1.25rem;
-  box-shadow:var(--shadow-xs);
-  display:flex; flex-direction:column; gap:.875rem;
-  transition:all .2s;
-}
-.cosecha-card:hover { box-shadow:var(--shadow-md); border-color:var(--cyan-border); }
-.cosecha-header { display:flex; align-items:flex-start; gap:.625rem; }
-.cosecha-id {
-  font-family:'Inter',sans-serif; font-size:.6rem; font-weight:700;
-  color:var(--white); background:var(--cyan-deep);
-  padding:.14rem .4rem; border-radius:var(--radius-sm);
-  letter-spacing:.5px; text-transform:uppercase; flex-shrink:0; margin-top:2px;
-}
-.cosecha-title { font-weight:700; font-size:.88rem; color:var(--ink-900); line-height:1.35; }
-.cosecha-ideas { display:flex; flex-direction:column; gap:.4rem; }
-.idea {
-  font-size:.77rem; color:var(--text-sub); line-height:1.6;
-  padding:.45rem .7rem;
-  background:var(--ink-50); border-radius:var(--radius-sm);
-  border-left:2px solid var(--border);
-}
-.idea strong { color:var(--ink-700); font-weight:600; }
-.cosecha-quote {
-  font-size:.74rem; color:var(--cyan-deep); font-style:italic;
-  border-left:2px solid var(--cyan);
-  padding:.4rem .75rem; line-height:1.65;
-  background:var(--cyan-bg);
-  border-radius:0 var(--radius-sm) var(--radius-sm) 0;
-}
+    strong {
+      font-weight: 600;
+    }
 
- 
-.vot-grid { display:grid; grid-template-columns:1fr 1fr; gap:1.25rem; }
-.vot-card {
-  background:var(--bg-card); border:1px solid var(--border);
-  border-radius:var(--radius); padding:1.375rem;
-  box-shadow:var(--shadow-xs);
-}
-.vot-title {
-  font-weight:700; font-size:.9rem; color:var(--ink-900);
-  margin-bottom:1rem; padding-bottom:.625rem;
-  border-bottom:2px solid var(--cyan-bg);
-}
-.vot-item { display:flex; align-items:center; gap:.75rem; margin-bottom:.625rem; }
-.vot-rank { font-family:'Inter',sans-serif; font-size:.7rem; font-weight:700; color:var(--cyan-deep); width:22px; flex-shrink:0; }
-.vot-label { font-size:.77rem; color:var(--text); flex:1; line-height:1.4; }
-.vot-bar-w { width:64px; height:4px; background:var(--ink-100); border-radius:3px; overflow:hidden; flex-shrink:0; }
-.vot-bar { height:100%; border-radius:3px; background:var(--cyan); }
-.vot-bar.top { background:var(--yellow); }
-.vot-result {
-  display:flex; align-items:center; gap:.875rem;
-  margin-bottom:.625rem; padding:.875rem 1rem;
-  background:var(--ink-50); border:1px solid var(--border);
-  border-radius:var(--radius-sm);
-}
-.vot-result.winner { background:var(--cyan-bg); border-color:var(--cyan-border); }
-.vot-result-n {
-  font-size:1.75rem; font-weight:700; color:var(--cyan-deep);
-  flex-shrink:0; min-width:56px; letter-spacing:-1px; line-height:1;
-}
-.vot-result-label { font-size:.77rem; color:var(--text-sub); line-height:1.45; }
-.vot-result-label strong { color:var(--text); font-weight:600; }
+    img {
+      max-width: 100%;
+    }
 
- 
-.recursos-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; }
-.rec-link {
-  display:flex; align-items:center; gap:.875rem;
-  background:var(--bg-card); border:1px solid var(--border);
-  border-radius:var(--radius); padding:1.125rem;
-  text-decoration:none; color:var(--text);
-  box-shadow:var(--shadow-xs); transition:all .2s;
-}
-.rec-link:hover { border-color:var(--cyan-border); box-shadow:var(--shadow-md); transform:translateY(-2px); text-decoration:none; }
-.rec-icon {
-  width:40px; height:40px; border-radius:10px;
-  background:var(--cyan-bg); border:1px solid var(--cyan-border);
-  display:flex; align-items:center; justify-content:center;
-  font-size:1.2rem; flex-shrink:0;
-}
-.rec-body { flex:1; min-width:0; }
-.rec-title { font-weight:700; font-size:.84rem; color:var(--ink-900); margin-bottom:.15rem; }
-.rec-desc { font-size:.71rem; color:var(--muted); overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; line-height:1.4; }
-.rec-link svg { margin-left:auto; flex-shrink:0; color:var(--muted); }
 
- 
-.footer {
-  background:var(--ink-900);
-  border-top:3px solid var(--cyan);
-  padding:1.75rem 2rem; text-align:center;
-  font-size:.71rem; color:rgba(255,255,255,.4);
-  font-family:'Inter',sans-serif; margin-top:2rem;
-  letter-spacing:.2px; line-height:1.7;
-}
-.footer strong { color:rgba(255,255,255,.7); }
+    .hdr {
+      background: var(--white);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid var(--border);
+      box-shadow: var(--shadow-xs);
+    }
 
- 
-.hallazgos-grid { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
-.hallazgo-card {
-  background:var(--bg-card); border:1px solid var(--border);
-  border-radius:var(--radius); padding:1.25rem;
-  box-shadow:var(--shadow-xs); transition:all .2s;
-}
-.hallazgo-card:hover { box-shadow:var(--shadow-md); }
-.hallazgo-hdr { display:flex; align-items:center; gap:.625rem; margin-bottom:.75rem; }
-.hallazgo-id {
-  font-family:'Inter',sans-serif; font-size:.6rem; font-weight:700;
-  padding:.18rem .4rem; border-radius:var(--radius-sm); color:var(--white); flex-shrink:0;
-}
-.hallazgo-id.pos { background:var(--green); }
-.hallazgo-id.neg { background:var(--red-text); }
-.hallazgo-id.neu { background:var(--ink-500); }
-.hallazgo-title { font-weight:700; font-size:.85rem; color:var(--ink-900); line-height:1.35; }
-.hallazgo-desc { font-size:.75rem; color:var(--text-sub); line-height:1.65; margin-bottom:.625rem; }
-.hallazgo-quote {
-  font-size:.74rem; color:var(--cyan-deep); font-style:italic;
-  border-left:2px solid var(--cyan); padding-left:.625rem; line-height:1.6;
-  background:var(--cyan-bg); padding:.4rem .75rem;
-  border-radius:0 var(--radius-sm) var(--radius-sm) 0;
-}
-.temp { display:inline-flex; align-items:center; gap:.25rem; font-size:.65rem; font-family:'Inter',sans-serif; font-weight:600; margin-left:auto; }
-.temp.neg { color:var(--red-text); }
-.temp.pos { color:var(--green); }
+    .hdr-in {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: .75rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
 
- 
-.cta-ideaton {
-  background:linear-gradient(135deg, var(--cyan-bg), var(--lav-bg));
-  border:1px solid var(--cyan-border);
-  border-radius:var(--radius-xl);
-  padding:2.5rem; text-align:center;
-}
-.cta-ideaton h3 { color:var(--ink-900); font-size:1.4rem; font-weight:700; margin-bottom:.5rem; }
-.cta-ideaton p { color:var(--text-sub); font-size:.88rem; margin-bottom:1.5rem; line-height:1.7; }
-.btn-cta {
-  display:inline-block; background:var(--cyan-deep); color:#fff;
-  font-family:'Inter',sans-serif; font-weight:700; font-size:.85rem;
-  padding:.75rem 2.25rem; border-radius:var(--radius-pill);
-  text-decoration:none; transition:all .2s;
-  box-shadow:0 4px 16px rgba(0,118,184,.25);
-}
-.btn-cta:hover { background:var(--cyan); transform:translateY(-1px); box-shadow:0 6px 20px rgba(0,174,254,.3); text-decoration:none; }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: .875rem;
+    }
 
- 
-@media(max-width:900px) {
-  .desafios-grid { grid-template-columns:repeat(2,1fr); }
-  .tldr-grid { grid-template-columns:1fr; }
-  .recursos-grid { grid-template-columns:1fr 1fr; }
-}
-@media(max-width:768px) {
-  .hero-in { grid-template-columns:1fr; gap:2.5rem; }
-  .hero-right { justify-content:center; }
-  .hero-video-wrap { width:220px; }
-  .hero h1 { font-size:2.1rem; }
-  .resumen-grid, .hallazgos-grid, .vot-grid,
-  .recursos-grid, .stat-grid, .cosecha-grid { grid-template-columns:1fr; }
-  .nav { display:none; }
-  .main { padding:2rem 1.25rem; }
-  .sec-title { font-size:1.25rem; }
-  .hero { padding:3rem 1.25rem; }
-}
-@media(max-width:540px) {
-  .desafios-grid { grid-template-columns:1fr; }
-}
-</style>
+    .logo-img {
+      height: 28px;
+      width: auto;
+      display: block;
+    }
+
+    .logo-sub-wrap {
+      border-left: 1px solid var(--border);
+      padding-left: .875rem;
+    }
+
+    .logo-sub {
+      color: var(--muted);
+      font-size: .62rem;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .nav {
+      display: flex;
+      gap: .125rem;
+    }
+
+    .nav a {
+      color: var(--text-sub);
+      font-family: 'Inter', sans-serif;
+      font-size: .67rem;
+      font-weight: 500;
+      padding: .3rem .65rem;
+      border-radius: var(--radius-pill);
+      transition: all .15s;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+    }
+
+    .nav a:hover {
+      background: var(--cyan-bg);
+      color: var(--cyan-deep);
+      text-decoration: none;
+    }
+
+
+    .hero {
+      background: linear-gradient(135deg, #070708 0%, #0A1628 55%, #0B1A2E 100%);
+      border-bottom: 1px solid rgba(0, 174, 254, .12);
+      padding: 4.5rem 2rem 4rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -120px;
+      right: -80px;
+      width: 520px;
+      height: 520px;
+      background: radial-gradient(circle, rgba(0, 174, 254, .12) 0%, transparent 65%);
+      pointer-events: none;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -100px;
+      left: -60px;
+      width: 380px;
+      height: 380px;
+      background: radial-gradient(circle, rgba(202, 189, 236, .08) 0%, transparent 65%);
+      pointer-events: none;
+    }
+
+    .hero-in {
+      max-width: 1140px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 260px;
+      gap: 4rem;
+      align-items: start;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-left {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .hero-right {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    .hero-eyebrow {
+      font-family: 'Inter', sans-serif;
+      font-size: .62rem;
+      font-weight: 700;
+      color: var(--cyan);
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      line-height: 1.08;
+      letter-spacing: -1.5px;
+      color: #ffffff;
+    }
+
+    .hero h1 span {
+      color: var(--cyan);
+    }
+
+    .hero-desc {
+      color: rgba(255, 255, 255, .6);
+      font-size: .93rem;
+      line-height: 1.8;
+      max-width: 500px;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .375rem;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      padding: .22rem .7rem;
+      border-radius: var(--radius-pill);
+      font-size: .67rem;
+      font-weight: 600;
+      font-family: 'Inter', sans-serif;
+      border: 1px solid;
+      letter-spacing: .2px;
+    }
+
+    .pill-c {
+      background: rgba(0, 174, 254, .15);
+      color: var(--cyan);
+      border-color: rgba(0, 174, 254, .3);
+    }
+
+    .pill-y {
+      background: rgba(202, 189, 236, .15);
+      color: #6B5FA8;
+      border-color: rgba(202, 189, 236, .4);
+    }
+
+    .pill-w {
+      background: rgba(255, 255, 255, .07);
+      color: rgba(255, 255, 255, .7);
+      border-color: rgba(255, 255, 255, .13);
+    }
+
+
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: .625rem;
+    }
+
+    .stat-card {
+      background: rgba(255, 255, 255, .05);
+      border: 1px solid rgba(255, 255, 255, .09);
+      border-radius: var(--radius);
+      padding: .875rem 1rem;
+      text-align: center;
+      backdrop-filter: blur(4px);
+    }
+
+    .stat-card:hover {
+      border-color: rgba(0, 174, 254, .3);
+    }
+
+    .stat-n {
+      font-size: 1.85rem;
+      font-weight: 700;
+      color: var(--cyan);
+      line-height: 1;
+      margin-bottom: .2rem;
+      letter-spacing: -1px;
+    }
+
+    .stat-l {
+      font-size: .67rem;
+      color: rgba(255, 255, 255, .45);
+      font-family: 'Inter', sans-serif;
+      line-height: 1.4;
+    }
+
+
+    .hero-video-wrap {
+      width: 100%;
+      aspect-ratio: 9/16;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      background: #000;
+      position: relative;
+      border: 1px solid rgba(255, 255, 255, .1);
+    }
+
+    .hero-video-wrap iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+
+    .hero-video-wrap video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .unmute-btn {
+      position: absolute;
+      bottom: 12px;
+      right: 12px;
+      background: rgba(0, 0, 0, .5);
+      border: none;
+      border-radius: 50%;
+      width: 34px;
+      height: 34px;
+      font-size: .9rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      backdrop-filter: blur(6px);
+      transition: .15s;
+      color: white;
+    }
+
+    .unmute-btn:hover {
+      background: rgba(0, 118, 184, .85);
+    }
+
+
+    .main {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
+    }
+
+    .sec {
+      margin-bottom: 4rem;
+    }
+
+    .sec-hdr {
+      display: flex;
+      align-items: baseline;
+      gap: .875rem;
+      margin-bottom: 2rem;
+      padding-bottom: .75rem;
+      border-bottom: 2px solid var(--border);
+    }
+
+    .sec-num {
+      font-family: 'Inter', sans-serif;
+      font-size: .6rem;
+      color: var(--cyan-deep);
+      letter-spacing: 2px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .sec-title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      letter-spacing: -.4px;
+      color: var(--ink-900);
+    }
+
+    .sep {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 3.5rem 0;
+    }
+
+
+    .tldr-banner {
+      background: var(--cyan-bg);
+      border: 1px solid var(--cyan-border);
+      border-left: 4px solid var(--cyan);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .tldr-tag {
+      display: inline-flex;
+      align-items: center;
+      background: var(--cyan-deep);
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      font-size: .6rem;
+      padding: .2rem .6rem;
+      border-radius: var(--radius-pill);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: .875rem;
+    }
+
+    .tldr-title {
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--ink-900);
+      margin-bottom: 1.125rem;
+    }
+
+    .tldr-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: .875rem;
+    }
+
+    .tldr-card {
+      background: var(--white);
+      border: 1px solid var(--cyan-border);
+      border-radius: var(--radius);
+      padding: 1rem 1.125rem;
+      box-shadow: var(--shadow-xs);
+    }
+
+    .tldr-card-icon {
+      font-size: 1.25rem;
+      margin-bottom: .375rem;
+    }
+
+    .tldr-card-title {
+      font-weight: 700;
+      font-size: .82rem;
+      color: var(--ink-900);
+      margin-bottom: .3rem;
+    }
+
+    .tldr-card-desc {
+      font-size: .76rem;
+      color: var(--text-sub);
+      line-height: 1.65;
+    }
+
+    .tldr-quote {
+      margin-top: 1rem;
+      padding: .875rem 1.125rem;
+      background: var(--white);
+      border: 1px solid var(--cyan-border);
+      border-radius: var(--radius);
+      font-size: .82rem;
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    .tldr-quote strong {
+      color: var(--cyan-deep);
+    }
+
+
+    .resumen-selfie {
+      margin-bottom: 1.75rem;
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      position: relative;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .selfie-img {
+      width: 100%;
+      display: block;
+    }
+
+    .selfie-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(to top, rgba(0, 0, 0, .6) 0%, transparent 100%);
+      color: rgba(255, 255, 255, .85);
+      font-size: .72rem;
+      font-family: 'Inter', sans-serif;
+      padding: 2rem 1.5rem .875rem;
+      letter-spacing: .2px;
+    }
+
+    .resumen-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .res-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.375rem;
+      box-shadow: var(--shadow-xs);
+      transition: all .2s;
+    }
+
+    .res-card:hover {
+      box-shadow: var(--shadow-md);
+      border-color: var(--cyan-border);
+      transform: translateY(-1px);
+    }
+
+    .res-card-icon {
+      font-size: 1.5rem;
+      margin-bottom: .6rem;
+      display: block;
+    }
+
+    .res-card-title {
+      font-weight: 700;
+      font-size: .9rem;
+      margin-bottom: .375rem;
+      color: var(--ink-900);
+    }
+
+    .res-card-desc {
+      font-size: .79rem;
+      color: var(--text-sub);
+      line-height: 1.7;
+    }
+
+
+    .desafios-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+
+    .desafio-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      box-shadow: var(--shadow-xs);
+      transition: all .2s;
+      position: relative;
+    }
+
+    .desafio-card:hover {
+      box-shadow: var(--shadow-md);
+      border-color: var(--cyan-border);
+      transform: translateY(-2px);
+    }
+
+    .desafio-id {
+      display: inline-block;
+      font-family: 'Inter', sans-serif;
+      font-size: .6rem;
+      font-weight: 700;
+      color: var(--white);
+      background: var(--cyan-deep);
+      padding: .14rem .45rem;
+      border-radius: var(--radius-sm);
+      letter-spacing: .5px;
+      margin-bottom: .5rem;
+      text-transform: uppercase;
+    }
+
+    .desafio-title {
+      font-weight: 700;
+      font-size: .88rem;
+      line-height: 1.4;
+      margin-bottom: .5rem;
+      color: var(--ink-900);
+    }
+
+    .desafio-desc {
+      font-size: .76rem;
+      color: var(--text-sub);
+      line-height: 1.65;
+    }
+
+    .desafio-card.top {
+      border-top: 3px solid var(--yellow);
+      background: linear-gradient(135deg, #00ECFE 0%, #00AEFE 35%, #CABDEC 70%, #d4f8fe 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .desafio-card.top::before {
+      content: '';
+      position: absolute;
+      top: -40px;
+      left: -30px;
+      width: 180px;
+      height: 180px;
+      background: radial-gradient(circle, rgba(255, 255, 255, .6) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .desafio-card.top::after {
+      content: '';
+      position: absolute;
+      bottom: -30px;
+      right: -20px;
+      width: 140px;
+      height: 140px;
+      background: radial-gradient(circle, rgba(0, 174, 254, .4) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .desafio-card.top .desafio-id {
+      background: rgba(0, 0, 0, .25);
+      color: #fff;
+    }
+
+    .desafio-card.top .desafio-title {
+      color: #0A1628;
+    }
+
+    .desafio-card.top .desafio-desc {
+      color: rgba(10, 22, 40, .75);
+    }
+
+    .desafio-card.top .top-badge {
+      background: rgba(255, 255, 255, .35);
+      color: #0A1628;
+      border-color: rgba(255, 255, 255, .5);
+    }
+
+    .top-badge {
+      display: inline-block;
+      background: rgba(255, 255, 255, .35);
+      color: #0A1628;
+      border: 1px solid rgba(255, 255, 255, .5);
+      font-size: .58rem;
+      font-weight: 700;
+      padding: .1rem .45rem;
+      border-radius: var(--radius-pill);
+      font-family: 'Inter', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+      margin-bottom: .5rem;
+    }
+
+    .cosecha-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+
+    .cosecha-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-top: 3px solid var(--cyan);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      box-shadow: var(--shadow-xs);
+      display: flex;
+      flex-direction: column;
+      gap: .875rem;
+      transition: all .2s;
+    }
+
+    .cosecha-card:hover {
+      box-shadow: var(--shadow-md);
+      border-color: var(--cyan-border);
+    }
+
+    .cosecha-header {
+      display: flex;
+      align-items: flex-start;
+      gap: .625rem;
+    }
+
+    .cosecha-id {
+      font-family: 'Inter', sans-serif;
+      font-size: .6rem;
+      font-weight: 700;
+      color: var(--white);
+      background: var(--cyan-deep);
+      padding: .14rem .4rem;
+      border-radius: var(--radius-sm);
+      letter-spacing: .5px;
+      text-transform: uppercase;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .cosecha-title {
+      font-weight: 700;
+      font-size: .88rem;
+      color: var(--ink-900);
+      line-height: 1.35;
+    }
+
+    .cosecha-ideas {
+      display: flex;
+      flex-direction: column;
+      gap: .4rem;
+    }
+
+    .idea {
+      font-size: .77rem;
+      color: var(--text-sub);
+      line-height: 1.6;
+      padding: .45rem .7rem;
+      background: var(--ink-50);
+      border-radius: var(--radius-sm);
+      border-left: 2px solid var(--border);
+    }
+
+    .idea strong {
+      color: var(--ink-700);
+      font-weight: 600;
+    }
+
+    .cosecha-quote {
+      font-size: .74rem;
+      color: var(--cyan-deep);
+      font-style: italic;
+      border-left: 2px solid var(--cyan);
+      padding: .4rem .75rem;
+      line-height: 1.65;
+      background: var(--cyan-bg);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    }
+
+
+    .vot-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+    }
+
+    .vot-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.375rem;
+      box-shadow: var(--shadow-xs);
+    }
+
+    .vot-title {
+      font-weight: 700;
+      font-size: .9rem;
+      color: var(--ink-900);
+      margin-bottom: 1rem;
+      padding-bottom: .625rem;
+      border-bottom: 2px solid var(--cyan-bg);
+    }
+
+    .vot-item {
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+      margin-bottom: .625rem;
+    }
+
+    .vot-rank {
+      font-family: 'Inter', sans-serif;
+      font-size: .7rem;
+      font-weight: 700;
+      color: var(--cyan-deep);
+      width: 22px;
+      flex-shrink: 0;
+    }
+
+    .vot-label {
+      font-size: .77rem;
+      color: var(--text);
+      flex: 1;
+      line-height: 1.4;
+    }
+
+    .vot-bar-w {
+      width: 64px;
+      height: 4px;
+      background: var(--ink-100);
+      border-radius: 3px;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    .vot-bar {
+      height: 100%;
+      border-radius: 3px;
+      background: var(--cyan);
+    }
+
+    .vot-bar.top {
+      background: var(--yellow);
+    }
+
+    .vot-result {
+      display: flex;
+      align-items: center;
+      gap: .875rem;
+      margin-bottom: .625rem;
+      padding: .875rem 1rem;
+      background: var(--ink-50);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+    }
+
+    .vot-result.winner {
+      background: var(--cyan-bg);
+      border-color: var(--cyan-border);
+    }
+
+    .vot-result-n {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--cyan-deep);
+      flex-shrink: 0;
+      min-width: 56px;
+      letter-spacing: -1px;
+      line-height: 1;
+    }
+
+    .vot-result-label {
+      font-size: .77rem;
+      color: var(--text-sub);
+      line-height: 1.45;
+    }
+
+    .vot-result-label strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+
+    .recursos-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+
+    .rec-link {
+      display: flex;
+      align-items: center;
+      gap: .875rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.125rem;
+      text-decoration: none;
+      color: var(--text);
+      box-shadow: var(--shadow-xs);
+      transition: all .2s;
+    }
+
+    .rec-link:hover {
+      border-color: var(--cyan-border);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+      text-decoration: none;
+    }
+
+    .rec-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: var(--cyan-bg);
+      border: 1px solid var(--cyan-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+
+    .rec-body {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .rec-title {
+      font-weight: 700;
+      font-size: .84rem;
+      color: var(--ink-900);
+      margin-bottom: .15rem;
+    }
+
+    .rec-desc {
+      font-size: .71rem;
+      color: var(--muted);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      line-clamp: 2;
+      -webkit-box-orient: vertical;
+      line-height: 1.4;
+    }
+
+    .rec-link svg {
+      margin-left: auto;
+      flex-shrink: 0;
+      color: var(--muted);
+    }
+
+
+    .footer {
+      background: var(--ink-900);
+      border-top: 3px solid var(--cyan);
+      padding: 1.75rem 2rem;
+      text-align: center;
+      font-size: .71rem;
+      color: rgba(255, 255, 255, .4);
+      font-family: 'Inter', sans-serif;
+      margin-top: 2rem;
+      letter-spacing: .2px;
+      line-height: 1.7;
+    }
+
+    .footer strong {
+      color: rgba(255, 255, 255, .7);
+    }
+
+
+    .hallazgos-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .hallazgo-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      box-shadow: var(--shadow-xs);
+      transition: all .2s;
+    }
+
+    .hallazgo-card:hover {
+      box-shadow: var(--shadow-md);
+    }
+
+    .hallazgo-hdr {
+      display: flex;
+      align-items: center;
+      gap: .625rem;
+      margin-bottom: .75rem;
+    }
+
+    .hallazgo-id {
+      font-family: 'Inter', sans-serif;
+      font-size: .6rem;
+      font-weight: 700;
+      padding: .18rem .4rem;
+      border-radius: var(--radius-sm);
+      color: var(--white);
+      flex-shrink: 0;
+    }
+
+    .hallazgo-id.pos {
+      background: var(--green);
+    }
+
+    .hallazgo-id.neg {
+      background: var(--red-text);
+    }
+
+    .hallazgo-id.neu {
+      background: var(--ink-500);
+    }
+
+    .hallazgo-title {
+      font-weight: 700;
+      font-size: .85rem;
+      color: var(--ink-900);
+      line-height: 1.35;
+    }
+
+    .hallazgo-desc {
+      font-size: .75rem;
+      color: var(--text-sub);
+      line-height: 1.65;
+      margin-bottom: .625rem;
+    }
+
+    .hallazgo-quote {
+      font-size: .74rem;
+      color: var(--cyan-deep);
+      font-style: italic;
+      border-left: 2px solid var(--cyan);
+      padding-left: .625rem;
+      line-height: 1.6;
+      background: var(--cyan-bg);
+      padding: .4rem .75rem;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    }
+
+    .temp {
+      display: inline-flex;
+      align-items: center;
+      gap: .25rem;
+      font-size: .65rem;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      margin-left: auto;
+    }
+
+    .temp.neg {
+      color: var(--red-text);
+    }
+
+    .temp.pos {
+      color: var(--green);
+    }
+
+
+    .cta-ideaton {
+      background: linear-gradient(135deg, var(--cyan-bg), var(--lav-bg));
+      border: 1px solid var(--cyan-border);
+      border-radius: var(--radius-xl);
+      padding: 2.5rem;
+      text-align: center;
+    }
+
+    .cta-ideaton h3 {
+      color: var(--ink-900);
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: .5rem;
+    }
+
+    .cta-ideaton p {
+      color: var(--text-sub);
+      font-size: .88rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.7;
+    }
+
+    .btn-cta {
+      display: inline-block;
+      background: var(--cyan-deep);
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      font-size: .85rem;
+      padding: .75rem 2.25rem;
+      border-radius: var(--radius-pill);
+      text-decoration: none;
+      transition: all .2s;
+      box-shadow: 0 4px 16px rgba(0, 118, 184, .25);
+    }
+
+    .btn-cta:hover {
+      background: var(--cyan);
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(0, 174, 254, .3);
+      text-decoration: none;
+    }
+
+
+    @media(max-width:900px) {
+      .desafios-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .tldr-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .recursos-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media(max-width:768px) {
+      .hero-in {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+
+      .hero-right {
+        justify-content: center;
+      }
+
+      .hero-video-wrap {
+        width: 220px;
+      }
+
+      .hero h1 {
+        font-size: 2.1rem;
+      }
+
+      .resumen-grid,
+      .hallazgos-grid,
+      .vot-grid,
+      .recursos-grid,
+      .stat-grid,
+      .cosecha-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .nav {
+        display: none;
+      }
+
+      .main {
+        padding: 2rem 1.25rem;
+      }
+
+      .sec-title {
+        font-size: 1.25rem;
+      }
+
+      .hero {
+        padding: 3rem 1.25rem;
+      }
+    }
+
+    @media(max-width:540px) {
+      .desafios-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
+
 <body>
-<header class="hdr">
-  <div class="hdr-in">
-    <div class="logo">
-      <img src="/img/logo.png" alt="Ai+Equipo" class="logo-img">
-      <div class="logo-sub-wrap">
-        <div class="logo-sub">Kick Off · Ayuda Memoria · GCBA · Mayo 2026</div>
+  <header class="hdr">
+    <div class="hdr-in">
+      <div class="logo">
+        <img src="/img/logo.png" alt="Ai+Equipo" class="logo-img">
+        <div class="logo-sub-wrap">
+          <div class="logo-sub">Kick Off · Ayuda Memoria · GCBA · Mayo 2026</div>
+        </div>
       </div>
+      <nav class="nav">
+        <a href="#resumen">Encuentro</a>
+        <a href="#desafios">Desafíos</a>
+        <a href="#votaciones">Votaciones</a>
+        <a href="#recursos">Recursos</a>
+      </nav>
     </div>
-    <nav class="nav">
-      <a href="#resumen">Encuentro</a>
-      <a href="#desafios">Desafíos</a>
-      <a href="#votaciones">Votaciones</a>
-      <a href="#recursos">Recursos</a>
-    </nav>
-  </div>
-</header>
-<section class="hero">
-  <div class="hero-in">
-    <div class="hero-left">
-      <div class="hero-eyebrow">GCBA · Subsecretaría de Comunicación Digital</div>
-      <h1>Lo que construimos<br>juntos en el <span>Kick Off</span></h1>
-      <p class="hero-desc">Este documento es tu ayuda memoria del primer encuentro del programa AI+Equipo. Acá encontrás los desafíos que identificamos, los hallazgos del research y lo que votamos juntos.</p>
-      <div class="hero-meta">
-        <span class="pill pill-c">75 participantes</span>
-        <span class="pill pill-c">7 desafíos explorados</span>
-        <span class="pill pill-y">15 hallazgos del research</span>
-        <span class="pill pill-w">Mayo 2026</span>
-      </div>
-      <div class="stat-grid">
-        <div class="stat-card">
-          <div class="stat-n">75</div>
-          <div class="stat-l">personas del equipo participaron</div>
+  </header>
+  <section class="hero">
+    <div class="hero-in">
+      <div class="hero-left">
+        <div class="hero-eyebrow">GCBA · Subsecretaría de Comunicación Digital</div>
+        <h1>Lo que construimos<br>juntos en el <span>Kick Off</span></h1>
+        <p class="hero-desc">Este documento es tu ayuda memoria del primer encuentro del programa AI+Equipo. Acá
+          encontrás los desafíos que identificamos, los hallazgos del research y lo que votamos juntos.</p>
+        <div class="hero-meta">
+          <span class="pill pill-c">75 participantes</span>
+          <span class="pill pill-c">7 desafíos explorados</span>
+          <span class="pill pill-y">15 hallazgos del research</span>
+          <span class="pill pill-w">Mayo 2026</span>
         </div>
-        <div class="stat-card">
-          <div class="stat-n">7</div>
-          <div class="stat-l">desafíos de adopción de IA identificados</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-n">100%</div>
-          <div class="stat-l">eligieron que la IA potencia, no reemplaza</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-n">89%</div>
-          <div class="stat-l">quieren involucrarse en todas las formas</div>
+        <div class="stat-grid">
+          <div class="stat-card">
+            <div class="stat-n">75</div>
+            <div class="stat-l">personas del equipo participaron</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-n">7</div>
+            <div class="stat-l">desafíos de adopción de IA identificados</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-n">100%</div>
+            <div class="stat-l">eligieron que la IA potencia, no reemplaza</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-n">89%</div>
+            <div class="stat-l">quieren involucrarse en todas las formas</div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="hero-right">
-      <div class="hero-video-wrap">
-        <iframe
-          id="yt-player"
-          src="https://www.youtube.com/embed/WkY8cgjvE10?autoplay=1&mute=1&loop=1&playlist=WkY8cgjvE10&controls=0&playsinline=1"
-          title="Kick Off AI+Equipo"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
-        <button class="unmute-btn" id="unmute-btn" onclick="
+      <div class="hero-right">
+        <div class="hero-video-wrap">
+          <iframe id="yt-player"
+            src="https://www.youtube.com/embed/WkY8cgjvE10?autoplay=1&mute=1&loop=1&playlist=WkY8cgjvE10&controls=0&playsinline=1"
+            title="Kick Off AI+Equipo" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+          <button class="unmute-btn" id="unmute-btn" onclick="
           var iframe = document.getElementById('yt-player');
           var b = document.getElementById('unmute-btn');
           if(b.dataset.muted !== 'false'){
@@ -605,326 +1238,432 @@ img { max-width:100%; }
             b.dataset.muted = 'true';
           }
         ">🔇</button>
-      </div>
-    </div>
-  </div>
-</section>
-<main class="main">
-<div class="tldr-banner">
-  <div class="tldr-tag">TL;DR</div>
-  <div class="tldr-title">Lo más importante del Kick Off en 60 segundos</div>
-  <div class="tldr-grid">
-    <div class="tldr-card">
-      <div class="tldr-card-icon">🧠</div>
-      <div class="tldr-card-title">Lo que descubrimos</div>
-      <div class="tldr-card-desc">El equipo tiene <strong>entusiasmo genuino</strong> con la IA, pero la sobrecarga cotidiana frena su potencial. El mayor desafío no es la herramienta — es la cultura de urgencia que la antecede.</div>
-    </div>
-    <div class="tldr-card">
-      <div class="tldr-card-icon">⭐</div>
-      <div class="tldr-card-title">Lo que más les importa</div>
-      <div class="tldr-card-desc">El desafío más votado fue <strong>el rol irremplazable del humano</strong>. No es miedo a la IA — es una pregunta legítima sobre identidad y valor en un contexto que cambia rápido.</div>
-    </div>
-    <div class="tldr-card">
-      <div class="tldr-card-icon">🚀</div>
-      <div class="tldr-card-title">Lo que viene</div>
-      <div class="tldr-card-desc">La <strong>Ideaton</strong>: una sesión de co-diseño donde el equipo propone soluciones concretas sobre los desafíos más votados.</div>
-    </div>
-  </div>
-  <div class="tldr-quote">
-    <strong>La frase que lo resume:</strong> "La IA puede potenciar el trabajo de las personas si la usamos con propósito." — 95% del equipo la eligió como el espíritu del proyecto.
-  </div>
-</div>
-<div class="sec" id="resumen">
-  <div class="sec-hdr"><span class="sec-num">01</span><h2 class="sec-title">¿Qué fue el Kick Off?</h2></div>
-  <div class="resumen-selfie">
-    <img src="/img/selfie.jpg" alt="El equipo en el Kick Off AI+Equipo" class="selfie-img">
-    <div class="selfie-caption">75 personas. Un teatro. Un punto de partida compartido. — Mayo 2026</div>
-  </div>
-  <div class="resumen-grid">
-    <div class="res-card">
-      <div class="res-card-icon">🎯</div>
-      <div class="res-card-title">El objetivo del encuentro</div>
-      <div class="res-card-desc">Arrancar juntos el programa AI+Equipo: entender el estado actual de adopción de IA en la Subsecretaría, identificar los desafíos reales que enfrenta el equipo, y construir una hoja de ruta compartida desde abajo hacia arriba — no una bajada de línea.</div>
-    </div>
-    <div class="res-card">
-      <div class="res-card-icon">🔬</div>
-      <div class="res-card-title">El research previo</div>
-      <div class="res-card-desc">Antes del Kick Off, se realizó una investigación cualitativa con el equipo (Voces AI). Se analizaron cientos de narrativas individuales para identificar patrones, tensiones y oportunidades. El resultado fueron 7 desafíos y 15 hallazgos que guiaron el encuentro.</div>
-    </div>
-    <div class="res-card">
-      <div class="res-card-icon">🤝</div>
-      <div class="res-card-title">La dinámica del día</div>
-      <div class="res-card-desc">Grupos de trabajo exploraron los desafíos desde su propia experiencia — usando papelógrafos, post-its y herramientas de votación en tiempo real. Cada grupo construyó su perspectiva sobre los desafíos y propuso ideas concretas de intervención.</div>
-    </div>
-    <div class="res-card">
-      <div class="res-card-icon">💡</div>
-      <div class="res-card-title">La idea central que emergió</div>
-      <div class="res-card-desc">La IA no viene a reemplazar al equipo — viene a liberar tiempo y energía para lo que el equipo hace mejor. El criterio humano, la empatía y la creatividad son lo que ninguna herramienta puede replicar. La IA potencia; el humano decide.</div>
-    </div>
-  </div>
-</div>
-<hr class="sep">
-<div class="sec" id="desafios">
-  <div class="sec-hdr"><span class="sec-num">02</span><h2 class="sec-title">Los 7 desafíos que identificamos</h2></div>
-  <p style="font-size:.85rem;color:var(--muted);margin-bottom:1.5rem;">Cada desafío es un área de oportunidad para la adopción de IA en la Subsecretaría, identificados a través de <a href="https://nextstepslab.com/voces.ai/" target="_blank" style="color:var(--cyan);font-weight:600;text-decoration:none;">Voces.ai</a>. Los rankeaste según tu nivel de interés — el más votado está marcado.</p>
-  <div class="desafios-grid">
-    <div class="desafio-card">
-      <div class="desafio-id">D1</div>
-      <div class="desafio-title">De Alta Disponibilidad a Productividad Sostenible</div>
-      <div class="desafio-desc">La urgencia permanente y la disponibilidad constante generan agotamiento. La IA debe ser una herramienta de liberación, no una presión adicional de velocidad.</div>
-    </div>
-    <div class="desafio-card">
-      <div class="desafio-id">D2</div>
-      <div class="desafio-title">Liberando la Mente: De Tareas Mecánicas a Valor Estratégico</div>
-      <div class="desafio-desc">Eliminar la fricción de las tareas de "bajo valor" — Excel repetitivo, reportes manuales — para que el equipo recupere su capacidad de análisis y creatividad.</div>
-    </div>
-    <div class="desafio-card">
-      <div class="desafio-id">D3</div>
-      <div class="desafio-title">El Pilar de la Confianza: Protocolos de IA y Datos Sensibles</div>
-      <div class="desafio-desc">La falta de un protocolo oficial sobre datos públicos genera parálisis. Sin certezas sobre privacidad, la adopción se queda en usos triviales y el equipo se auto-limita.</div>
-    </div>
-    <div class="desafio-card">
-      <div class="desafio-id">D4</div>
-      <div class="desafio-title">De Caso Aislado a Estándar Operativo</div>
-      <div class="desafio-desc">Existen "campeones" dentro del equipo que ya ahorraron semanas de trabajo con IA. El desafío es identificarlos y replicar sus flujos para generar efecto contagio.</div>
-    </div>
-    <div class="desafio-card">
-      <div class="desafio-id">D5</div>
-      <div class="desafio-title">Alfabetización IA y Soberanía Cognitiva</div>
-      <div class="desafio-desc">La demanda de formación es explícita. El equipo quiere pasar del prompting básico al pensamiento estratégico — sin perder soberanía sobre sus propios procesos.</div>
-    </div>
-    <div class="desafio-card top">
-      <div class="top-badge">⭐ #1 más votado</div>
-      <div class="desafio-id">D6</div>
-      <div class="desafio-title">El Rol Irremplazable del Humano en la Era de la IA</div>
-      <div class="desafio-desc">¿Qué hace el humano que ninguna IA puede hacer? Creatividad, empatía, criterio contextual. El desafío es redefinir el rol: de ejecutar tareas a supervisar decisiones.</div>
-    </div>
-    <div class="desafio-card">
-      <div class="desafio-id">D7</div>
-      <div class="desafio-title">Resultados Tangibles: Demostración Rápida de Valor a la Ciudadanía</div>
-      <div class="desafio-desc">La IA ya está impactando la comunicación vecinal. Hay victorias tempranas para mostrar — mensajes más claros, campañas más eficientes — que validan la estrategia con hechos.</div>
-    </div>
-  </div>
-</div>
-<hr class="sep">
-<div class="sec" id="cosecha">
-  <div class="sec-hdr"><span class="sec-num">04</span><h2 class="sec-title">Cosecha de los grupos de trabajo</h2></div>
-  <p style="font-size:.85rem;color:var(--muted);margin-bottom:1.5rem;">Cada grupo exploró un desafío desde su experiencia real. Esto es lo que construyeron — ideas clave, tensiones y voces propias del equipo.</p>
-  <div class="desafios-grid">
-
-    <div class="desafio-card">
-      <div class="desafio-id">D1</div>
-      <div class="desafio-title">De Alta Disponibilidad a Productividad Sostenible</div>
-      <div class="desafio-desc">
-        <div class="cosecha-ideas">
-          <div class="idea">💡 Generar productividad <strong>sin perder el contacto humano</strong> ni el registro de las tareas.</div>
-          <div class="idea">⚡ La IA puede <strong>agotar con demasiada información</strong> — hay que saber qué pedirle y qué filtrar.</div>
-          <div class="idea">🔒 <strong>Cuidar la información</strong> que devuelve: no todo lo que genera es relevante o seguro de usar.</div>
         </div>
-        <blockquote class="cosecha-quote">"Generar productividad sin perder el contacto humano, no perder el registro de las tareas tras optimizarlo con la inteligencia artificial."</blockquote>
       </div>
     </div>
-
-    <div class="desafio-card">
-      <div class="desafio-id">D2</div>
-      <div class="desafio-title">Liberando la Mente: De Tareas Mecánicas a Valor Estratégico</div>
-      <div class="desafio-desc">
-        <div class="cosecha-ideas">
-          <div class="idea">💡 La IA puede ocuparse del proceso <strong>para que el humano lo piense, lo razone y lo complete</strong> con criterio propio.</div>
-          <div class="idea">⚠️ El tiempo de "entrenamiento" frustra: la IA no dice que no entiende, pero tampoco entiende — <strong>hay que detectarlo</strong>.</div>
-          <div class="idea">🚀 Usos concretos: <strong>diseño de presentaciones, reportes de campañas, recomendaciones de audiencia</strong> y generación de insights.</div>
+  </section>
+  <main class="main">
+    <div class="tldr-banner">
+      <div class="tldr-tag">TL;DR</div>
+      <div class="tldr-title">Lo más importante del Kick Off en 60 segundos</div>
+      <div class="tldr-grid">
+        <div class="tldr-card">
+          <div class="tldr-card-icon">🧠</div>
+          <div class="tldr-card-title">Lo que descubrimos</div>
+          <div class="tldr-card-desc">El equipo tiene <strong>entusiasmo genuino</strong> con la IA, pero la sobrecarga
+            cotidiana frena su potencial. El mayor desafío no es la herramienta — es la cultura de urgencia que la
+            antecede.</div>
         </div>
-        <blockquote class="cosecha-quote">"Lo que se ocupe directamente es sacarnos la tarea lo mejor, de armarlo, de pensarlo, de razonarlo — y después ponerle toda la parte humana para que ese entregable sea el correcto."</blockquote>
-      </div>
-    </div>
-
-    <div class="desafio-card">
-      <div class="desafio-id">D3</div>
-      <div class="desafio-title">El Pilar de la Confianza: Protocolos de IA y Datos Sensibles</div>
-      <div class="desafio-desc">
-        <div class="cosecha-ideas">
-          <div class="idea">💡 Se necesita un <strong>protocolo oficial de uso</strong> — qué información se puede compartir y qué no.</div>
-          <div class="idea">⚠️ Hay desconfianza para <strong>pasar datos de tableros a presentaciones</strong> de forma automática, por riesgo de error.</div>
-          <div class="idea">🎨 La IA necesita ser <strong>educada en el manual de marca del gobierno</strong> — no lo aprende sola ni de una sola vez.</div>
+        <div class="tldr-card">
+          <div class="tldr-card-icon">⭐</div>
+          <div class="tldr-card-title">Lo que más les importa</div>
+          <div class="tldr-card-desc">El desafío más votado fue <strong>el rol irremplazable del humano</strong>. No es
+            miedo a la IA — es una pregunta legítima sobre identidad y valor en un contexto que cambia rápido.</div>
         </div>
-        <blockquote class="cosecha-quote">"Hay que darle demasiado contexto con información clara y sensible para que también nos pueda dar los informes que necesitamos."</blockquote>
-      </div>
-    </div>
-
-    <div class="desafio-card">
-      <div class="desafio-id">D4</div>
-      <div class="desafio-title">De Caso Aislado a Estándar Operativo</div>
-      <div class="desafio-desc">
-        <div class="cosecha-ideas">
-          <div class="idea">💡 Hay equipos que ya usan IA — el desafío es <strong>compartirlo y estandarizar los usos</strong> más exitosos.</div>
-          <div class="idea">📚 Se propuso crear <strong>manuales de uso y capacitaciones</strong>, pero el tiempo es el limitante principal.</div>
-          <div class="idea">🧠 La IA aporta <strong>variedad de ideas inesperadas</strong> y es útil para brainstorming — si se invierte el tiempo inicial, se ahorra después.</div>
+        <div class="tldr-card">
+          <div class="tldr-card-icon">🚀</div>
+          <div class="tldr-card-title">Lo que viene</div>
+          <div class="tldr-card-desc">La <strong>Ideaton</strong>: una sesión de co-diseño donde el equipo propone
+            soluciones concretas sobre los desafíos más votados.</div>
         </div>
-        <blockquote class="cosecha-quote">"Vemos que en realidad los resultados están buenísimos — si nosotros invertimos un poco de tiempo, después vamos a ahorrar ese tiempo."</blockquote>
+      </div>
+      <div class="tldr-quote">
+        <strong>La frase que lo resume:</strong> "La IA puede potenciar el trabajo de las personas si la usamos con
+        propósito." — 95% del equipo la eligió como el espíritu del proyecto.
       </div>
     </div>
-
-    <div class="desafio-card">
-      <div class="desafio-id">D5</div>
-      <div class="desafio-title">Alfabetización IA y Soberanía Cognitiva</div>
-      <div class="desafio-desc">
-        <div class="cosecha-ideas">
-          <div class="idea">💡 Propuesta concreta: <strong>unificar el prompting a nivel Subsecretaría</strong> — empezar por asuntos de mail y escalar.</div>
-          <div class="idea">⚠️ La estructura del GCBA es <strong>demasiado grande para unificar de golpe</strong> — la adopción desigual es un freno real.</div>
-          <div class="idea">🌱 La capacitación es clave, pero debe incluir <strong>cómo proteger información sensible</strong> al usar IA en el trabajo.</div>
+    <div class="sec" id="resumen">
+      <div class="sec-hdr"><span class="sec-num">01</span>
+        <h2 class="sec-title">¿Qué fue el Kick Off?</h2>
+      </div>
+      <div class="resumen-selfie">
+        <img src="/img/selfie.jpg" alt="El equipo en el Kick Off AI+Equipo" class="selfie-img">
+        <div class="selfie-caption">75 personas. Un teatro. Un punto de partida compartido. — Mayo 2026</div>
+      </div>
+      <div class="resumen-grid">
+        <div class="res-card">
+          <div class="res-card-icon">🎯</div>
+          <div class="res-card-title">El objetivo del encuentro</div>
+          <div class="res-card-desc">Arrancar juntos el programa AI+Equipo: entender el estado actual de adopción de IA
+            en la Subsecretaría, identificar los desafíos reales que enfrenta el equipo, y construir una hoja de ruta
+            compartida desde abajo hacia arriba — no una bajada de línea.</div>
         </div>
-        <blockquote class="cosecha-quote">"El desconocimiento nos frena — no la tecnología. Cuanto uno más se forma, cuanto uno más se capacita, se van rompiendo un montón de creencias."</blockquote>
-      </div>
-    </div>
-
-    <div class="desafio-card top">
-      <div class="top-badge">⭐ #1 más votado</div>
-      <div class="desafio-id">D6</div>
-      <div class="desafio-title">El Rol Irremplazable del Humano en la Era de la IA</div>
-      <div class="desafio-desc">
-        <div class="cosecha-ideas">
-          <div class="idea">💡 El miedo al reemplazo existe, pero el equipo coincidió: la IA es un <strong>gran complemento</strong>, especialmente para tareas monótonas.</div>
-          <div class="idea">🤖 Idea emergente: <strong>un bot supervisor propio</strong> para call center que asista a operadores en tiempo real cuando los líderes no pueden estar.</div>
-          <div class="idea">🎯 Lo que frena es el <strong>tiempo de capacitación inicial</strong> — pero cuanto más se conoce, más se rompe el miedo.</div>
+        <div class="res-card">
+          <div class="res-card-icon">🔬</div>
+          <div class="res-card-title">El research previo</div>
+          <div class="res-card-desc">Antes del Kick Off, se realizó una investigación cualitativa con el equipo (Voces
+            AI). Se analizaron cientos de narrativas individuales para identificar patrones, tensiones y oportunidades.
+            El resultado fueron 7 desafíos y 15 hallazgos que guiaron el encuentro.</div>
         </div>
-        <blockquote class="cosecha-quote">"Las personas que pasaron por este equipo coincidimos en que, más allá del miedo, la IA es un gran complemento — sobre todo para resolver muchas tareas monótonas."</blockquote>
-      </div>
-    </div>
-
-    <div class="desafio-card">
-      <div class="desafio-id">D7</div>
-      <div class="desafio-title">Resultados Tangibles: Demostración Rápida de Valor a la Ciudadanía</div>
-      <div class="desafio-desc">
-        <div class="cosecha-ideas">
-          <div class="idea">💡 La IA ya impacta en comunicación vecinal: <strong>mensajes más claros, campañas más eficientes</strong> — hay victorias para mostrar.</div>
-          <div class="idea">⚠️ El principal freno: <strong>la alineación de criterios entre áreas</strong> — no todos hablan el mismo lenguaje de datos y gestión.</div>
-          <div class="idea">📈 La IA no solo ejecuta: <strong>enseña su razonamiento</strong> — eso es valor agregado para quien la usa.</div>
+        <div class="res-card">
+          <div class="res-card-icon">🤝</div>
+          <div class="res-card-title">La dinámica del día</div>
+          <div class="res-card-desc">Grupos de trabajo exploraron los desafíos desde su propia experiencia — usando
+            papelógrafos, post-its y herramientas de votación en tiempo real. Cada grupo construyó su perspectiva sobre
+            los desafíos y propuso ideas concretas de intervención.</div>
         </div>
-        <blockquote class="cosecha-quote">"El aprendizaje que te da la IA no es unilateral — puedo aprender qué procesamiento usó para hacer ese razonamiento."</blockquote>
+        <div class="res-card">
+          <div class="res-card-icon">💡</div>
+          <div class="res-card-title">La idea central que emergió</div>
+          <div class="res-card-desc">La IA no viene a reemplazar al equipo — viene a liberar tiempo y energía para lo
+            que el equipo hace mejor. El criterio humano, la empatía y la creatividad son lo que ninguna herramienta
+            puede replicar. La IA potencia; el humano decide.</div>
+        </div>
+      </div>
+    </div>
+    <hr class="sep">
+    <div class="sec" id="desafios">
+      <div class="sec-hdr"><span class="sec-num">02</span>
+        <h2 class="sec-title">Los 7 desafíos que identificamos</h2>
+      </div>
+      <p style="font-size:.85rem;color:var(--muted);margin-bottom:1.5rem;">Cada desafío es un área de oportunidad para
+        la adopción de IA en la Subsecretaría, identificados a través de <a href="https://nextstepslab.com/voces.ai/"
+          target="_blank" style="color:var(--cyan);font-weight:600;text-decoration:none;">Voces.ai</a>. Los rankeaste
+        según tu nivel de interés — el más votado está marcado.</p>
+      <div class="desafios-grid">
+        <div class="desafio-card">
+          <div class="desafio-id">D1</div>
+          <div class="desafio-title">De Alta Disponibilidad a Productividad Sostenible</div>
+          <div class="desafio-desc">La urgencia permanente y la disponibilidad constante generan agotamiento. La IA debe
+            ser una herramienta de liberación, no una presión adicional de velocidad.</div>
+        </div>
+        <div class="desafio-card">
+          <div class="desafio-id">D2</div>
+          <div class="desafio-title">Liberando la Mente: De Tareas Mecánicas a Valor Estratégico</div>
+          <div class="desafio-desc">Eliminar la fricción de las tareas de "bajo valor" — Excel repetitivo, reportes
+            manuales — para que el equipo recupere su capacidad de análisis y creatividad.</div>
+        </div>
+        <div class="desafio-card">
+          <div class="desafio-id">D3</div>
+          <div class="desafio-title">El Pilar de la Confianza: Protocolos de IA y Datos Sensibles</div>
+          <div class="desafio-desc">La falta de un protocolo oficial sobre datos públicos genera parálisis. Sin certezas
+            sobre privacidad, la adopción se queda en usos triviales y el equipo se auto-limita.</div>
+        </div>
+        <div class="desafio-card">
+          <div class="desafio-id">D4</div>
+          <div class="desafio-title">De Caso Aislado a Estándar Operativo</div>
+          <div class="desafio-desc">Existen "campeones" dentro del equipo que ya ahorraron semanas de trabajo con IA. El
+            desafío es identificarlos y replicar sus flujos para generar efecto contagio.</div>
+        </div>
+        <div class="desafio-card">
+          <div class="desafio-id">D5</div>
+          <div class="desafio-title">Alfabetización IA y Soberanía Cognitiva</div>
+          <div class="desafio-desc">La demanda de formación es explícita. El equipo quiere pasar del prompting básico al
+            pensamiento estratégico — sin perder soberanía sobre sus propios procesos.</div>
+        </div>
+        <div class="desafio-card top">
+          <div class="top-badge">⭐ #1 más votado</div>
+          <div class="desafio-id">D6</div>
+          <div class="desafio-title">El Rol Irremplazable del Humano en la Era de la IA</div>
+          <div class="desafio-desc">¿Qué hace el humano que ninguna IA puede hacer? Creatividad, empatía, criterio
+            contextual. El desafío es redefinir el rol: de ejecutar tareas a supervisar decisiones.</div>
+        </div>
+        <div class="desafio-card">
+          <div class="desafio-id">D7</div>
+          <div class="desafio-title">Resultados Tangibles: Demostración Rápida de Valor a la Ciudadanía</div>
+          <div class="desafio-desc">La IA ya está impactando la comunicación vecinal. Hay victorias tempranas para
+            mostrar — mensajes más claros, campañas más eficientes — que validan la estrategia con hechos.</div>
+        </div>
+      </div>
+    </div>
+    <hr class="sep">
+    <div class="sec" id="cosecha">
+      <div class="sec-hdr"><span class="sec-num">04</span>
+        <h2 class="sec-title">Cosecha de los grupos de trabajo</h2>
+      </div>
+      <p style="font-size:.85rem;color:var(--muted);margin-bottom:1.5rem;">Cada grupo exploró un desafío desde su
+        experiencia real. Esto es lo que construyeron — ideas clave, tensiones y voces propias del equipo.</p>
+      <div class="desafios-grid">
+
+        <div class="desafio-card">
+          <div class="desafio-id">D1</div>
+          <div class="desafio-title">De Alta Disponibilidad a Productividad Sostenible</div>
+          <div class="desafio-desc">
+            <div class="cosecha-ideas">
+              <div class="idea">💡 Generar productividad <strong>sin perder el contacto humano</strong> ni el registro
+                de las tareas.</div>
+              <div class="idea">⚡ La IA puede <strong>agotar con demasiada información</strong> — hay que saber qué
+                pedirle y qué filtrar.</div>
+              <div class="idea">🔒 <strong>Cuidar la información</strong> que devuelve: no todo lo que genera es
+                relevante o seguro de usar.</div>
+            </div>
+            <blockquote class="cosecha-quote">"Generar productividad sin perder el contacto humano, no perder el
+              registro de las tareas tras optimizarlo con la inteligencia artificial."</blockquote>
+          </div>
+        </div>
+
+        <div class="desafio-card">
+          <div class="desafio-id">D2</div>
+          <div class="desafio-title">Liberando la Mente: De Tareas Mecánicas a Valor Estratégico</div>
+          <div class="desafio-desc">
+            <div class="cosecha-ideas">
+              <div class="idea">💡 La IA puede ocuparse del proceso <strong>para que el humano lo piense, lo razone y lo
+                  complete</strong> con criterio propio.</div>
+              <div class="idea">⚠️ El tiempo de "entrenamiento" frustra: la IA no dice que no entiende, pero tampoco
+                entiende — <strong>hay que detectarlo</strong>.</div>
+              <div class="idea">🚀 Usos concretos: <strong>diseño de presentaciones, reportes de campañas,
+                  recomendaciones de audiencia</strong> y generación de insights.</div>
+            </div>
+            <blockquote class="cosecha-quote">"Lo que se ocupe directamente es sacarnos la tarea lo mejor, de armarlo,
+              de pensarlo, de razonarlo — y después ponerle toda la parte humana para que ese entregable sea el
+              correcto."</blockquote>
+          </div>
+        </div>
+
+        <div class="desafio-card">
+          <div class="desafio-id">D3</div>
+          <div class="desafio-title">El Pilar de la Confianza: Protocolos de IA y Datos Sensibles</div>
+          <div class="desafio-desc">
+            <div class="cosecha-ideas">
+              <div class="idea">💡 Se necesita un <strong>protocolo oficial de uso</strong> — qué información se puede
+                compartir y qué no.</div>
+              <div class="idea">⚠️ Hay desconfianza para <strong>pasar datos de tableros a presentaciones</strong> de
+                forma automática, por riesgo de error.</div>
+              <div class="idea">🎨 La IA necesita ser <strong>educada en el manual de marca del gobierno</strong> — no
+                lo aprende sola ni de una sola vez.</div>
+            </div>
+            <blockquote class="cosecha-quote">"Hay que darle demasiado contexto con información clara y sensible para
+              que también nos pueda dar los informes que necesitamos."</blockquote>
+          </div>
+        </div>
+
+        <div class="desafio-card">
+          <div class="desafio-id">D4</div>
+          <div class="desafio-title">De Caso Aislado a Estándar Operativo</div>
+          <div class="desafio-desc">
+            <div class="cosecha-ideas">
+              <div class="idea">💡 Hay equipos que ya usan IA — el desafío es <strong>compartirlo y estandarizar los
+                  usos</strong> más exitosos.</div>
+              <div class="idea">📚 Se propuso crear <strong>manuales de uso y capacitaciones</strong>, pero el tiempo es
+                el limitante principal.</div>
+              <div class="idea">🧠 La IA aporta <strong>variedad de ideas inesperadas</strong> y es útil para
+                brainstorming — si se invierte el tiempo inicial, se ahorra después.</div>
+            </div>
+            <blockquote class="cosecha-quote">"Vemos que en realidad los resultados están buenísimos — si nosotros
+              invertimos un poco de tiempo, después vamos a ahorrar ese tiempo."</blockquote>
+          </div>
+        </div>
+
+        <div class="desafio-card">
+          <div class="desafio-id">D5</div>
+          <div class="desafio-title">Alfabetización IA y Soberanía Cognitiva</div>
+          <div class="desafio-desc">
+            <div class="cosecha-ideas">
+              <div class="idea">💡 Propuesta concreta: <strong>unificar el prompting a nivel Subsecretaría</strong> —
+                empezar por asuntos de mail y escalar.</div>
+              <div class="idea">⚠️ La estructura del GCBA es <strong>demasiado grande para unificar de golpe</strong> —
+                la adopción desigual es un freno real.</div>
+              <div class="idea">🌱 La capacitación es clave, pero debe incluir <strong>cómo proteger información
+                  sensible</strong> al usar IA en el trabajo.</div>
+            </div>
+            <blockquote class="cosecha-quote">"El desconocimiento nos frena — no la tecnología. Cuanto uno más se forma,
+              cuanto uno más se capacita, se van rompiendo un montón de creencias."</blockquote>
+          </div>
+        </div>
+
+        <div class="desafio-card top">
+          <div class="top-badge">⭐ #1 más votado</div>
+          <div class="desafio-id">D6</div>
+          <div class="desafio-title">El Rol Irremplazable del Humano en la Era de la IA</div>
+          <div class="desafio-desc">
+            <div class="cosecha-ideas">
+              <div class="idea">💡 El miedo al reemplazo existe, pero el equipo coincidió: la IA es un <strong>gran
+                  complemento</strong>, especialmente para tareas monótonas.</div>
+              <div class="idea">🤖 Idea emergente: <strong>un bot supervisor propio</strong> para call center que asista
+                a operadores en tiempo real cuando los líderes no pueden estar.</div>
+              <div class="idea">🎯 Lo que frena es el <strong>tiempo de capacitación inicial</strong> — pero cuanto más
+                se conoce, más se rompe el miedo.</div>
+            </div>
+            <blockquote class="cosecha-quote">"Las personas que pasaron por este equipo coincidimos en que, más allá del
+              miedo, la IA es un gran complemento — sobre todo para resolver muchas tareas monótonas."</blockquote>
+          </div>
+        </div>
+
+        <div class="desafio-card">
+          <div class="desafio-id">D7</div>
+          <div class="desafio-title">Resultados Tangibles: Demostración Rápida de Valor a la Ciudadanía</div>
+          <div class="desafio-desc">
+            <div class="cosecha-ideas">
+              <div class="idea">💡 La IA ya impacta en comunicación vecinal: <strong>mensajes más claros, campañas más
+                  eficientes</strong> — hay victorias para mostrar.</div>
+              <div class="idea">⚠️ El principal freno: <strong>la alineación de criterios entre áreas</strong> — no
+                todos hablan el mismo lenguaje de datos y gestión.</div>
+              <div class="idea">📈 La IA no solo ejecuta: <strong>enseña su razonamiento</strong> — eso es valor
+                agregado para quien la usa.</div>
+            </div>
+            <blockquote class="cosecha-quote">"El aprendizaje que te da la IA no es unilateral — puedo aprender qué
+              procesamiento usó para hacer ese razonamiento."</blockquote>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <hr class="sep">
+
+    <div class="sec" id="votaciones">
+      <div class="sec-hdr"><span class="sec-num">03</span>
+        <h2 class="sec-title">Lo que votamos en el Kick Off</h2>
+      </div>
+      <div class="vot-grid">
+
+        <div class="vot-card">
+          <div class="vot-title">Ranking de desafíos por interés</div>
+          <div class="vot-item">
+            <span class="vot-rank">#1</span>
+            <span class="vot-label">El Rol Irremplazable del Humano</span>
+            <div class="vot-bar-w">
+              <div class="vot-bar top" style="width:100%;"></div>
+            </div>
+          </div>
+          <div class="vot-item">
+            <span class="vot-rank">#2</span>
+            <span class="vot-label">Protocolos de IA y Datos Sensibles</span>
+            <div class="vot-bar-w">
+              <div class="vot-bar" style="width:88%;"></div>
+            </div>
+          </div>
+          <div class="vot-item">
+            <span class="vot-rank">#3</span>
+            <span class="vot-label">Liberando la Mente: De Mecánicas a Estratégico</span>
+            <div class="vot-bar-w">
+              <div class="vot-bar" style="width:80%;"></div>
+            </div>
+          </div>
+          <div class="vot-item">
+            <span class="vot-rank">#4</span>
+            <span class="vot-label">De Alta Disponibilidad a Productividad Sostenible</span>
+            <div class="vot-bar-w">
+              <div class="vot-bar" style="width:72%;"></div>
+            </div>
+          </div>
+          <div class="vot-item">
+            <span class="vot-rank">#5</span>
+            <span class="vot-label">Alfabetización IA y Soberanía Cognitiva</span>
+            <div class="vot-bar-w">
+              <div class="vot-bar" style="width:63%;"></div>
+            </div>
+          </div>
+          <div class="vot-item">
+            <span class="vot-rank">#6</span>
+            <span class="vot-label">Resultados Tangibles para la Ciudadanía</span>
+            <div class="vot-bar-w">
+              <div class="vot-bar" style="width:50%;"></div>
+            </div>
+          </div>
+          <div class="vot-item">
+            <span class="vot-rank">#7</span>
+            <span class="vot-label">De Caso Aislado a Estándar Operativo</span>
+            <div class="vot-bar-w">
+              <div class="vot-bar" style="width:40%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="vot-card">
+          <div class="vot-title">Preguntas del AI-Tournament</div>
+          <div class="vot-result winner">
+            <div class="vot-result-n">100%</div>
+            <div class="vot-result-label"><strong>Idea central del encuentro:</strong> "La IA puede ayudarnos a mejorar
+              procesos, con criterio y acompañamiento." Unanimidad total.</div>
+          </div>
+          <div class="vot-result winner">
+            <div class="vot-result-n">80%</div>
+            <div class="vot-result-label"><strong>Mejor uso inicial de IA:</strong> "Todas las anteriores" — automatizar
+              tareas, resumir información y clasificar consultas.</div>
+          </div>
+          <div class="vot-result winner">
+            <div class="vot-result-n">95%</div>
+            <div class="vot-result-label"><strong>Espíritu del proyecto:</strong> "La IA puede potenciar el trabajo de
+              las personas si la usamos con propósito."</div>
+          </div>
+          <div class="vot-result winner">
+            <div class="vot-result-n">89%</div>
+            <div class="vot-result-label"><strong>Involucramiento:</strong> "Todas las anteriores" — compartir
+              aprendizajes, sumarse a eventos y hacer experimentos prácticos.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+    <hr class="sep">
+
+    <div style="margin-top:1.25rem;">
+      <div
+        style="font-family:'Inter',sans-serif;font-size:.68rem;font-weight:600;color:var(--dark);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:.75rem;">
+        ¿Con qué palabra resumiste tu opinión sobre AI+Equipo?</div>
+      <img src="/img/wordcloud.png" alt="Nube de palabras: interesante, necesaria, productiva, bada, impostergable..."
+        style="width:100%;border-radius:12px;display:block;">
+    </div>
+
+
+    <div class="sec" id="recursos">
+      <div class="sec-hdr"><span class="sec-num">06</span>
+        <h2 class="sec-title">Recursos del encuentro</h2>
+      </div>
+      <p style="font-size:.85rem;color:var(--muted);margin-bottom:1.5rem;">Todo el material del Kick Off en un solo
+        lugar.</p>
+      <div class="recursos-grid">
+        <a class="rec-link" href="https://drive.google.com/file/d/1CfOL28b0o6jbMCnKo-5CFuKnqtIQI7SV/view?usp=drive_link"
+          target="_blank">
+          <div class="rec-icon">📊</div>
+          <div class="rec-body">
+            <div class="rec-title">Research Voces AI</div>
+            <div class="rec-desc">Informe completo con los 7 desafíos y 15 hallazgos</div>
+          </div>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+            <polyline points="15 3 21 3 21 9" />
+            <line x1="10" y1="14" x2="21" y2="3" />
+          </svg>
+        </a>
+        <a class="rec-link" href="https://drive.google.com/file/d/1YN7fdqE6QVUDFSYmq8JHMEN5gLhZaaxB/view?usp=sharing"
+          target="_blank">
+          <div class="rec-icon">📋</div>
+          <div class="rec-body">
+            <div class="rec-title">Slides del Kick Off</div>
+            <div class="rec-desc">Presentación completa con resultados de votaciones en tiempo real</div>
+          </div>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+            <polyline points="15 3 21 3 21 9" />
+            <line x1="10" y1="14" x2="21" y2="3" />
+          </svg>
+        </a>
+        <a class="rec-link" href="https://photos.app.goo.gl/fTxMWhc7GjEVguv2A" target="_blank">
+          <div class="rec-icon">📸</div>
+          <div class="rec-body">
+            <div class="rec-title">Álbum de fotos</div>
+            <div class="rec-desc">Registro fotográfico del Kick Off — papelógrafos, grupos de trabajo y el equipo</div>
+          </div>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+            <polyline points="15 3 21 3 21 9" />
+            <line x1="10" y1="14" x2="21" y2="3" />
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="sec" id="cierre">
+      <div style="border-radius:16px;overflow:hidden;position:relative;">
+        <img src="/img/bienvenida.jpg" alt="Kick Off AI+Equipo — el equipo de la SSCDI en el auditorio"
+          style="width:100%;max-height:480px;object-fit:cover;display:block;border-radius:16px;">
+        <div
+          style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,90,127,.92));padding:2rem;border-radius:0 0 16px 16px;">
+          <div
+            style="font-family:'Inter',sans-serif;font-size:.7rem;font-weight:600;color:var(--cyan);letter-spacing:2px;text-transform:uppercase;margin-bottom:.4rem;">
+            AI+Equipo · Kick Off · Mayo 2026</div>
+          <div style="font-size:1.5rem;font-weight:700;color:var(--white);line-height:1.2;letter-spacing:-.5px;">75
+            personas. Un mismo propósito.<br>Ahora nos toca construirlo juntos.</div>
+        </div>
       </div>
     </div>
 
-  </div>
-</div>
-<hr class="sep">
-
-<div class="sec" id="votaciones">
-  <div class="sec-hdr"><span class="sec-num">03</span><h2 class="sec-title">Lo que votamos en el Kick Off</h2></div>
-  <div class="vot-grid">
-
-    <div class="vot-card">
-      <div class="vot-title">Ranking de desafíos por interés</div>
-      <div class="vot-item">
-        <span class="vot-rank">#1</span>
-        <span class="vot-label">El Rol Irremplazable del Humano</span>
-        <div class="vot-bar-w"><div class="vot-bar top" style="width:100%;"></div></div>
-      </div>
-      <div class="vot-item">
-        <span class="vot-rank">#2</span>
-        <span class="vot-label">Protocolos de IA y Datos Sensibles</span>
-        <div class="vot-bar-w"><div class="vot-bar" style="width:88%;"></div></div>
-      </div>
-      <div class="vot-item">
-        <span class="vot-rank">#3</span>
-        <span class="vot-label">Liberando la Mente: De Mecánicas a Estratégico</span>
-        <div class="vot-bar-w"><div class="vot-bar" style="width:80%;"></div></div>
-      </div>
-      <div class="vot-item">
-        <span class="vot-rank">#4</span>
-        <span class="vot-label">De Alta Disponibilidad a Productividad Sostenible</span>
-        <div class="vot-bar-w"><div class="vot-bar" style="width:72%;"></div></div>
-      </div>
-      <div class="vot-item">
-        <span class="vot-rank">#5</span>
-        <span class="vot-label">Alfabetización IA y Soberanía Cognitiva</span>
-        <div class="vot-bar-w"><div class="vot-bar" style="width:63%;"></div></div>
-      </div>
-      <div class="vot-item">
-        <span class="vot-rank">#6</span>
-        <span class="vot-label">Resultados Tangibles para la Ciudadanía</span>
-        <div class="vot-bar-w"><div class="vot-bar" style="width:50%;"></div></div>
-      </div>
-      <div class="vot-item">
-        <span class="vot-rank">#7</span>
-        <span class="vot-label">De Caso Aislado a Estándar Operativo</span>
-        <div class="vot-bar-w"><div class="vot-bar" style="width:40%;"></div></div>
-      </div>
-    </div>
-
-    <div class="vot-card">
-      <div class="vot-title">Preguntas del AI-Tournament</div>
-      <div class="vot-result winner">
-        <div class="vot-result-n">100%</div>
-        <div class="vot-result-label"><strong>Idea central del encuentro:</strong> "La IA puede ayudarnos a mejorar procesos, con criterio y acompañamiento." Unanimidad total.</div>
-      </div>
-      <div class="vot-result winner">
-        <div class="vot-result-n">80%</div>
-        <div class="vot-result-label"><strong>Mejor uso inicial de IA:</strong> "Todas las anteriores" — automatizar tareas, resumir información y clasificar consultas.</div>
-      </div>
-      <div class="vot-result winner">
-        <div class="vot-result-n">95%</div>
-        <div class="vot-result-label"><strong>Espíritu del proyecto:</strong> "La IA puede potenciar el trabajo de las personas si la usamos con propósito."</div>
-      </div>
-      <div class="vot-result winner">
-        <div class="vot-result-n">89%</div>
-        <div class="vot-result-label"><strong>Involucramiento:</strong> "Todas las anteriores" — compartir aprendizajes, sumarse a eventos y hacer experimentos prácticos.</div>
-      </div>
-    </div>
-
-  </div></div>
-</div>
-<hr class="sep">
-
-<div style="margin-top:1.25rem;">
-  <div style="font-family:'Inter',sans-serif;font-size:.68rem;font-weight:600;color:var(--dark);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:.75rem;">¿Con qué palabra resumiste tu opinión sobre AI+Equipo?</div>
-  <img src="/img/wordcloud.png" alt="Nube de palabras: interesante, necesaria, productiva, bada, impostergable..." style="width:100%;border-radius:12px;display:block;">
-</div>
-
-
-<div class="sec" id="recursos">
-  <div class="sec-hdr"><span class="sec-num">06</span><h2 class="sec-title">Recursos del encuentro</h2></div>
-  <p style="font-size:.85rem;color:var(--muted);margin-bottom:1.5rem;">Todo el material del Kick Off en un solo lugar.</p>
-  <div class="recursos-grid">
-    <a class="rec-link" href="https://drive.google.com/file/d/1CfOL28b0o6jbMCnKo-5CFuKnqtIQI7SV/view?usp=drive_link" target="_blank">
-      <div class="rec-icon">📊</div>
-      <div class="rec-body">
-        <div class="rec-title">Research Voces AI</div>
-        <div class="rec-desc">Informe completo con los 7 desafíos y 15 hallazgos</div>
-      </div>
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-    </a>
-    <a class="rec-link" href="https://drive.google.com/file/d/1YN7fdqE6QVUDFSYmq8JHMEN5gLhZaaxB/view?usp=sharing" target="_blank">
-      <div class="rec-icon">📋</div>
-      <div class="rec-body">
-        <div class="rec-title">Slides del Kick Off</div>
-        <div class="rec-desc">Presentación completa con resultados de votaciones en tiempo real</div>
-      </div>
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-    </a>
-    <a class="rec-link" href="https://photos.app.goo.gl/fTxMWhc7GjEVguv2A" target="_blank">
-      <div class="rec-icon">📸</div>
-      <div class="rec-body">
-        <div class="rec-title">Álbum de fotos</div>
-        <div class="rec-desc">Registro fotográfico del Kick Off — papelógrafos, grupos de trabajo y el equipo</div>
-      </div>
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-    </a>
-  </div>
-</div>
-<div class="sec" id="cierre">
-  <div style="border-radius:16px;overflow:hidden;position:relative;">
-    <img src="/img/bienvenida.jpg" alt="Kick Off AI+Equipo — el equipo de la SSCDI en el auditorio" style="width:100%;max-height:480px;object-fit:cover;display:block;border-radius:16px;">
-    <div style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,90,127,.92));padding:2rem;border-radius:0 0 16px 16px;">
-      <div style="font-family:'Inter',sans-serif;font-size:.7rem;font-weight:600;color:var(--cyan);letter-spacing:2px;text-transform:uppercase;margin-bottom:.4rem;">AI+Equipo · Kick Off · Mayo 2026</div>
-      <div style="font-size:1.5rem;font-weight:700;color:var(--white);line-height:1.2;letter-spacing:-.5px;">75 personas. Un mismo propósito.<br>Ahora nos toca construirlo juntos.</div>
-    </div>
-  </div>
-</div>
-
-</main>
-<footer class="footer">
-  <strong>AI+Equipo</strong> · Programa de adopción de IA · GCBA · Subsecretaría de Comunicación Digital<br>
-  Kick Off — Mayo 2026 · Este documento es de uso interno del equipo participante.
-</footer>
+  </main>
+  <footer class="footer">
+    <strong>AI+Equipo</strong> · Programa de adopción de IA · GCBA · Subsecretaría de Comunicación Digital<br>
+    Kick Off — Mayo 2026 · Este documento es de uso interno del equipo participante.
+  </footer>
 </body>
+
 </html>
