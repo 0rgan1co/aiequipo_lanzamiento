@@ -324,19 +324,46 @@ img { max-width:100%; }
 }
 .desafio-title { font-weight:700; font-size:.88rem; line-height:1.4; margin-bottom:.5rem; color:var(--ink-900); }
 .desafio-desc { font-size:.76rem; color:var(--text-sub); line-height:1.65; }
-.desafio-card.top { border-top:3px solid var(--yellow); }
-.desafio-card.top .desafio-id { background:var(--yellow-text); }
+.desafio-card.top {
+  border-top:3px solid var(--yellow);
+  background:linear-gradient(135deg, #00ECFE 0%, #00AEFE 35%, #CABDEC 70%, #d4f8fe 100%);
+  position:relative;
+  overflow:hidden;
+}
+.desafio-card.top::before {
+  content:'';
+  position:absolute;
+  top:-40px; left:-30px;
+  width:180px; height:180px;
+  background:radial-gradient(circle, rgba(255,255,255,.6) 0%, transparent 70%);
+  pointer-events:none;
+}
+.desafio-card.top::after {
+  content:'';
+  position:absolute;
+  bottom:-30px; right:-20px;
+  width:140px; height:140px;
+  background:radial-gradient(circle, rgba(0,174,254,.4) 0%, transparent 70%);
+  pointer-events:none;
+}
+.desafio-card.top .desafio-id { background:rgba(0,0,0,.25); color:#fff; }
+.desafio-card.top .desafio-title { color:#0A1628; }
+.desafio-card.top .desafio-desc { color:rgba(10,22,40,.75); }
+.desafio-card.top .top-badge {
+  background:rgba(255,255,255,.35);
+  color:#0A1628;
+  border-color:rgba(255,255,255,.5);
+}
+
 .top-badge {
   display:inline-block;
-  background:var(--yellow-bg); color:var(--yellow-text);
-  border:1px solid var(--yellow-border);
+  background:rgba(255,255,255,.35); color:#0A1628;
+  border:1px solid rgba(255,255,255,.5);
   font-size:.58rem; font-weight:700;
   padding:.1rem .45rem; border-radius:var(--radius-pill);
   font-family:'Inter',sans-serif; text-transform:uppercase;
   letter-spacing:.5px; margin-bottom:.5rem;
 }
-
- 
 .cosecha-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:1rem; }
 .cosecha-card {
   background:var(--bg-card);
