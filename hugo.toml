@@ -1,3 +1,4 @@
 baseURL = "https://ai-equipo-kickoff.surge.sh/"
-languageCode = "es"
+locale = "es-AR"
 title = "AI+Equipo — Kick Off SSCDI"
+disableKinds = ["taxonomy", "term"]
