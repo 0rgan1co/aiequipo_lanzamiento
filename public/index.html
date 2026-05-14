@@ -105,25 +105,23 @@ img { max-width:100%; }
 
  
 .hero {
-  background:var(--white);
-  border-bottom:1px solid var(--border);
+  background:linear-gradient(135deg, #070708 0%, #0A1628 55%, #0B1A2E 100%);
+  border-bottom:1px solid rgba(0,174,254,.12);
   padding:4.5rem 2rem 4rem;
   position:relative; overflow:hidden;
 }
- 
 .hero::before {
   content:'';
   position:absolute; top:-120px; right:-80px;
   width:520px; height:520px;
-  background:radial-gradient(circle, rgba(0,174,254,.07) 0%, transparent 65%);
+  background:radial-gradient(circle, rgba(0,174,254,.12) 0%, transparent 65%);
   pointer-events:none;
 }
- 
 .hero::after {
   content:'';
   position:absolute; bottom:-100px; left:-60px;
   width:380px; height:380px;
-  background:radial-gradient(circle, rgba(202,189,236,.1) 0%, transparent 65%);
+  background:radial-gradient(circle, rgba(202,189,236,.08) 0%, transparent 65%);
   pointer-events:none;
 }
 .hero-in {
@@ -138,17 +136,17 @@ img { max-width:100%; }
 .hero-eyebrow {
   font-family:'Inter',sans-serif;
   font-size:.62rem; font-weight:700;
-  color:var(--cyan-deep);
+  color:var(--cyan);
   letter-spacing:2.5px; text-transform:uppercase;
 }
 .hero h1 {
   font-size:2.8rem; font-weight:700;
   line-height:1.08; letter-spacing:-1.5px;
-  color:var(--ink-900);
+  color:#ffffff;
 }
-.hero h1 span { color:var(--cyan-deep); }
+.hero h1 span { color:var(--cyan); }
 .hero-desc {
-  color:var(--text-sub);
+  color:rgba(255,255,255,.6);
   font-size:.93rem; line-height:1.8; max-width:500px;
 }
 .hero-meta { display:flex; flex-wrap:wrap; gap:.375rem; }
@@ -160,27 +158,27 @@ img { max-width:100%; }
   font-family:'Inter',sans-serif;
   border:1px solid; letter-spacing:.2px;
 }
-.pill-c { background:var(--cyan-bg); color:var(--cyan-deep); border-color:var(--cyan-border); }
-.pill-y { background:var(--yellow-bg); color:var(--yellow-text); border-color:var(--yellow-border); }
-.pill-w { background:var(--ink-50); color:var(--text-sub); border-color:var(--border); }
+.pill-c { background:rgba(0,174,254,.15); color:var(--cyan); border-color:rgba(0,174,254,.3); }
+.pill-y { background:rgba(255,200,0,.12); color:#E6B800; border-color:rgba(255,204,0,.3); }
+.pill-w { background:rgba(255,255,255,.07); color:rgba(255,255,255,.7); border-color:rgba(255,255,255,.13); }
 
  
 .stat-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:.625rem; }
 .stat-card {
-  background:var(--ink-50);
-  border:1px solid var(--border);
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.09);
   border-radius:var(--radius);
   padding:.875rem 1rem; text-align:center;
-  transition:border-color .2s;
+  backdrop-filter:blur(4px);
 }
-.stat-card:hover { border-color:var(--cyan-border); }
+.stat-card:hover { border-color:rgba(0,174,254,.3); }
 .stat-n {
   font-size:1.85rem; font-weight:700;
-  color:var(--cyan-deep); line-height:1;
+  color:var(--cyan); line-height:1;
   margin-bottom:.2rem; letter-spacing:-1px;
 }
 .stat-l {
-  font-size:.67rem; color:var(--text-sub);
+  font-size:.67rem; color:rgba(255,255,255,.45);
   font-family:'Inter',sans-serif; line-height:1.4;
 }
 
@@ -825,13 +823,14 @@ img { max-width:100%; }
   <img src="/img/wordcloud.png" alt="Nube de palabras: interesante, necesaria, productiva, bada, impostergable..." style="width:100%;border-radius:12px;display:block;">
 </div>
 
+
 <div class="sec" id="recursos">
   <div class="sec-hdr"><span class="sec-num">06</span><h2 class="sec-title">Recursos del encuentro</h2></div>
   <p style="font-size:.85rem;color:var(--muted);margin-bottom:1.5rem;">Todo el material del Kick Off en un solo lugar.</p>
   <div class="recursos-grid">
     <a class="rec-link" href="https://drive.google.com/file/d/1CfOL28b0o6jbMCnKo-5CFuKnqtIQI7SV/view?usp=drive_link" target="_blank">
       <div class="rec-icon">📊</div>
-      <div>
+      <div class="rec-body">
         <div class="rec-title">Research Voces AI</div>
         <div class="rec-desc">Informe completo con los 7 desafíos y 15 hallazgos</div>
       </div>
@@ -839,7 +838,7 @@ img { max-width:100%; }
     </a>
     <a class="rec-link" href="https://drive.google.com/file/d/1YN7fdqE6QVUDFSYmq8JHMEN5gLhZaaxB/view" target="_blank">
       <div class="rec-icon">📋</div>
-      <div>
+      <div class="rec-body">
         <div class="rec-title">Slides del Kick Off</div>
         <div class="rec-desc">Presentación completa con resultados de votaciones en tiempo real</div>
       </div>
@@ -847,7 +846,7 @@ img { max-width:100%; }
     </a>
     <a class="rec-link" href="https://photos.app.goo.gl/fTxMWhc7GjEVguv2A" target="_blank">
       <div class="rec-icon">📸</div>
-      <div>
+      <div class="rec-body">
         <div class="rec-title">Álbum de fotos</div>
         <div class="rec-desc">Registro fotográfico del Kick Off — papelógrafos, grupos de trabajo y el equipo</div>
       </div>
@@ -855,7 +854,6 @@ img { max-width:100%; }
     </a>
   </div>
 </div>
-
 <div class="sec" id="cierre">
   <div style="border-radius:16px;overflow:hidden;position:relative;">
     <img src="/img/bienvenida.jpg" alt="Kick Off AI+Equipo — el equipo de la SSCDI en el auditorio" style="width:100%;max-height:480px;object-fit:cover;display:block;border-radius:16px;">
